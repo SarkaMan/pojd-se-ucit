@@ -27,7 +27,7 @@ const definitions = [
       'landmark: a building or place that is easily recognized, especially one that you can use to judge where you are',
   },
   {
-    expression: 'Throughout',
+    expression: 'throughout',
     definition: 'throughout: in every part, or during the whole period of time',
   },
   {
@@ -53,10 +53,13 @@ export const ExerciseTwo = ({ children: correctAnswer }) => {
 
     const userAnswer = event.target.value;
     setAnswer(userAnswer);
-    // setAnswer(userAnswer.toLowerCase() === correctAnswer.toLowerCase());
-    const isCorrect =
-      userAnswer.toLowerCase().trim() === correctAnswer.toLowerCase();
-    setAnswerValue(isCorrect);
+    if (answer === '') {
+      setAnswerValue(null);
+    } else {
+      const isCorrect =
+        userAnswer.toLowerCase().trim() === correctAnswer.toLowerCase();
+      setAnswerValue(isCorrect);
+    }
   };
   return (
     <input type="text" id="answer" value={answer} onChange={evaluateAnswer} />

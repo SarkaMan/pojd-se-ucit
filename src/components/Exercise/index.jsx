@@ -10,13 +10,18 @@ export const useAnswer = (key) => {
 
 export const Exercise = ({ children }) => {
   const [answers, setAnswers] = useState({});
+  const [showResult, setShowResult] = useState(false);
 
   const setAnswer = (key, answer) => {
     setAnswers((oldAnswers) => ({ ...oldAnswers, [key]: answer }));
+    if (answer === null) {
+      setShowResult(false);
+    }
   };
 
   const handleClick = (event) => {
     event.preventDefault();
+    setShowResult(true);
   };
 
   let disabled = false;
@@ -42,10 +47,11 @@ export const Exercise = ({ children }) => {
         <button disabled={disabled} onClick={handleClick}>
           Vyhodnotit
         </button>
-        <span>
-          {' '}
-          Správné odpovědi: {correctAnswers}/{answerCount}
-        </span>
+        {showResult && (
+          <span>
+            Správné odpovědi: {correctAnswers}/{answerCount}
+          </span>
+        )}
       </div>
     </>
   );

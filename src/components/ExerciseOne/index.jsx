@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useAnswer } from '../Exercise';
 const definitions = [
   {
     expression: 'encompasses',
@@ -25,7 +26,7 @@ const definitions = [
       'landmark: a building or place that is easily recognized, especially one that you can use to judge where you are',
   },
   {
-    expression: 'Throughout',
+    expression: 'throughout',
     definition: 'throughout: in every part, or during the whole period of time',
   },
   {
@@ -45,17 +46,18 @@ const definitions = [
 
 export const ExerciseOne = ({ children: correctAnswer }) => {
   const [answer, setAnswer] = useState('');
+  const setAnswerValue = useAnswer(correctAnswer);
 
   const evaluateAnswer = (event) => {
     event.preventDefault();
 
     const answer = event.target.value;
     setAnswer(answer);
-    const isCorrect = correctAnswer === answer;
-    if (isCorrect) {
-      console.log('Správná odpověď');
+
+    if (answer === '') {
+      setAnswerValue(null);
     } else {
-      console.log('Špatná odpověď');
+      setAnswerValue(correctAnswer === answer);
     }
   };
   return (
