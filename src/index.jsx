@@ -2,8 +2,6 @@ import { createRoot } from 'react-dom/client';
 import { HomePage } from './pages/HomePage';
 import './global.css';
 
-import { QuizForm } from './components/QuizForm';
-import { VideoQuiz } from './components/VideoQuiz';
 import Anglictina from './pages/Anglictina.mdx';
 import Spanelstina from './pages/Spanelstina.mdx';
 import Portugalstina from './pages/Portugalstina.mdx';
