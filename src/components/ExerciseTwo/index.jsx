@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { useAnswer } from '../Exercise';
+
 const definitions = [
   {
     expression: 'encompasses',
@@ -43,31 +45,20 @@ const definitions = [
   },
 ];
 
-export const ExerciseOne = ({ children: correctAnswer }) => {
+export const ExerciseTwo = ({ children: correctAnswer }) => {
   const [answer, setAnswer] = useState('');
-
+  const setAnswerValue = useAnswer(correctAnswer);
   const evaluateAnswer = (event) => {
     event.preventDefault();
 
-    const answer = event.target.value;
-    setAnswer(answer);
-    const isCorrect = correctAnswer === answer;
-    if (isCorrect) {
-      console.log('Správná odpověď');
-    } else {
-      console.log('Špatná odpověď');
-    }
+    const userAnswer = event.target.value;
+    setAnswer(userAnswer);
+    // setAnswer(userAnswer.toLowerCase() === correctAnswer.toLowerCase());
+    const isCorrect =
+      userAnswer.toLowerCase().trim() === correctAnswer.toLowerCase();
+    setAnswerValue(isCorrect);
   };
   return (
-    <>
-      <select value={answer} onChange={evaluateAnswer}>
-        <option value=""></option>
-        {definitions.map((option, index) => (
-          <option key={index} value={option.expression}>
-            {option.expression}
-          </option>
-        ))}
-      </select>
-    </>
+    <input type="text" id="answer" value={answer} onChange={evaluateAnswer} />
   );
 };
