@@ -1,9 +1,5 @@
-import English, { frontmatter as englishFrontmatter } from '../../eng.mdx';
 import React from 'react';
 import { LanguageCard } from '../../components/LanguageCard';
-import { createExerciseComponents } from '../../lib/mdx';
-
-console.log(englishFrontmatter);
 
 const languages = [
   {
@@ -28,8 +24,6 @@ const languages = [
 export const HomePage = () => {
   return (
     <>
-      <English components={createExerciseComponents(englishFrontmatter)} />
-
       {languages.map((language) => {
         return (
           <LanguageCard
