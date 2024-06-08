@@ -15,9 +15,12 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.23.1",
     "remark-directive": "^3.0.0",
+    "remark-frontmatter": "^5.0.0",
+    "remark-mdx-frontmatter": "^4.0.0",
     "unist-util-visit": "^5.0.0"
   },
   "devDependencies": {
+    "@tailwindcss/forms": "^0.5.7",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@vitejs/plugin-react": "^4.0.3",

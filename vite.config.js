@@ -3,6 +3,8 @@ import mdx from '@mdx-js/rollup';
 import react from '@vitejs/plugin-react';
 import remarkDirective from 'remark-directive';
 import { directiveMapper } from './src/lib/directiveMapper';
+import remarkFrontmatter from 'remark-frontmatter';
+import remarkMdxFrontmatter from 'remark-mdx-frontmatter';
 
 export default defineConfig({
   root: './src',
@@ -18,7 +20,12 @@ export default defineConfig({
     {
       enforce: 'pre',
       ...mdx({
-        remarkPlugins: [remarkDirective, directiveMapper],
+        remarkPlugins: [
+          remarkFrontmatter,
+          remarkMdxFrontmatter,
+          remarkDirective,
+          directiveMapper,
+        ],
       }),
     },
     react({ include: /\.(jsx|js|mdx|md|tsx|ts)$/ }),

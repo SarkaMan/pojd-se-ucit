@@ -1,17 +1,9 @@
-import '../../../src/index.css';
-import { Article } from '../../components/Article';
-import { ExerciseOne } from '../../components/ExerciseOne';
-import { Expression } from '../../components/Expression';
-import English from '../../eng.mdx';
+import English, { frontmatter as englishFrontmatter } from '../../eng.mdx';
 import React from 'react';
 import { LanguageCard } from '../../components/LanguageCard';
-import { Anglictina } from '../../components/Anglictina';
+import { createExerciseComponents } from '../../lib/mdx';
 
-const components = {
-  $$term: Expression,
-  $$option: () => 'OPTION',
-  $$input: () => 'INPUT',
-};
+console.log(englishFrontmatter);
 
 const languages = [
   {
@@ -36,10 +28,8 @@ const languages = [
 export const HomePage = () => {
   return (
     <>
-      <English components={components} />
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-      <Article />
-      <ExerciseOne />
+      <English components={createExerciseComponents(englishFrontmatter)} />
+
       {languages.map((language) => {
         return (
           <LanguageCard
