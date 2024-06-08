@@ -1,5 +1,8 @@
 import { defineConfig } from 'vite';
+import mdx from '@mdx-js/rollup';
 import react from '@vitejs/plugin-react';
+import remarkDirective from 'remark-directive';
+import { directiveMapper } from './src/lib/directiveMapper';
 
 export default defineConfig({
   root: './src',
@@ -11,5 +14,13 @@ export default defineConfig({
     outDir: '../dist',
     modulePreload: false,
   },
-  plugins: [react()],
+  plugins: [
+    {
+      enforce: 'pre',
+      ...mdx({
+        remarkPlugins: [remarkDirective, directiveMapper],
+      }),
+    },
+    react({ include: /\.(jsx|js|mdx|md|tsx|ts)$/ }),
+  ],
 });
