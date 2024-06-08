@@ -1,5 +1,7 @@
 import React from 'react';
 import { LanguageCard } from '../../components/LanguageCard';
+import About from '../About.mdx';
+import { createComponents } from '../../lib/mdx';
 
 const languages = [
   {
@@ -24,12 +26,14 @@ const languages = [
 export const HomePage = () => {
   return (
     <>
+      <About components={createComponents()} />
       {languages.map((language) => {
         return (
           <LanguageCard
             name={language.name}
             flag={language.flag}
             description={language.description}
+            key={language.name}
           />
         );
       })}

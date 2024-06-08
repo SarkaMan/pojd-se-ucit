@@ -5,7 +5,7 @@ import './global.css';
 import Anglictina from './pages/Anglictina.mdx';
 import Spanelstina from './pages/Spanelstina.mdx';
 import Portugalstina from './pages/Portugalstina.mdx';
-import About from './pages/About.mdx';
+
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { App } from './App';
 import { Header } from './Header';
@@ -13,46 +13,47 @@ import { Footer } from './Footer';
 import English, {
   frontmatter as englishFrontmatter,
 } from './pages/cviceni/eng.mdx';
-import { createExerciseComponents } from './lib/mdx';
+import { createExerciseComponents, createComponents } from './lib/mdx';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
+    children: [
+      {
+        path: '/',
+        element: <HomePage />,
+      },
+      {
+        path: 'anglictina',
+        element: <Anglictina components={createComponents()} />,
+      },
+      {
+        path: 'spanelstina',
+        element: <Spanelstina components={createComponents()} />,
+      },
+      {
+        path: 'portugalstina',
+        element: <Portugalstina components={createComponents()} />,
+      },
+      {
+        path: 'anglictina/cviceni',
+        element: (
+          <English components={createExerciseComponents(englishFrontmatter)} />
+        ),
+      },
+      // {
+      //   path: 'spanelstina/cviceni',
+      //   element: <SpanelstinaCviceni />,
+      // },
+      // {
+      //   path: 'portugalstina/cviceni',
+      //   element: <PortugalstinaCviceni />,
+      // },
+      // ],
+      // },
+    ],
   },
-  // children: [
-  {
-    path: '/',
-    element: <HomePage />,
-  },
-  {
-    path: 'anglictina',
-    element: <Anglictina />,
-  },
-  {
-    path: 'spanelstina',
-    element: <Spanelstina />,
-  },
-  {
-    path: 'portugalstina',
-    element: <Portugalstina />,
-  },
-  {
-    path: 'anglictina/cviceni',
-    element: (
-      <English components={createExerciseComponents(englishFrontmatter)} />
-    ),
-  },
-  // {
-  //   path: 'spanelstina/cviceni',
-  //   element: <SpanelstinaCviceni />,
-  // },
-  // {
-  //   path: 'portugalstina/cviceni',
-  //   element: <PortugalstinaCviceni />,
-  // },
-  // ],
-  // },
 ]);
 
 createRoot(document.querySelector('#app')).render(
