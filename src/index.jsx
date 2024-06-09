@@ -13,6 +13,12 @@ import { Footer } from './Footer';
 import English, {
   frontmatter as englishFrontmatter,
 } from './pages/cviceni/eng.mdx';
+import Spanish, {
+  frontmatter as spanishFrontmatter,
+} from './pages/cviceni/sp.mdx';
+import Portuguese, {
+  frontmatter as portugueseFrontmatter,
+} from './pages/cviceni/ptg.mdx';
 import { createExerciseComponents, createComponents } from './lib/mdx';
 
 const router = createBrowserRouter([
@@ -42,16 +48,20 @@ const router = createBrowserRouter([
           <English components={createExerciseComponents(englishFrontmatter)} />
         ),
       },
-      // {
-      //   path: 'spanelstina/cviceni',
-      //   element: <SpanelstinaCviceni />,
-      // },
-      // {
-      //   path: 'portugalstina/cviceni',
-      //   element: <PortugalstinaCviceni />,
-      // },
-      // ],
-      // },
+      {
+        path: 'spanelstina/cviceni',
+        element: (
+          <Spanish components={createExerciseComponents(spanishFrontmatter)} />
+        ),
+      },
+      {
+        path: 'portugalstina/cviceni',
+        element: (
+          <Portuguese
+            components={createExerciseComponents(portugueseFrontmatter)}
+          />
+        ),
+      },
     ],
   },
 ]);
