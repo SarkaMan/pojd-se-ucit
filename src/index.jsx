@@ -69,3 +69,6 @@ const router = createBrowserRouter([
 createRoot(document.querySelector('#app')).render(
   <RouterProvider router={router} />,
 );
+
+
+// Anglictina components={createComponents()}

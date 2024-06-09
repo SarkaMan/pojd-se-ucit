@@ -19,6 +19,10 @@ export const createComponents = () => ({
   ol: ({ children }) => (
     <ol className="list-decimal list-inside">{children}</ol>
   ),
+  /*
+  h1: ({ children }) => <h1 className="font-bold text-4xl m-4">{children}</h1>,
+  h2: ({ children }) => <h2 className="font-bold text-2xl m-3">{children}</h2>,*/
+  h3: ({ children }) => <h3 className="font-bold text-xl m-2">{children}</h3>,
 });
 // margin nadpisum = mezera
 export const createExerciseComponents = (frontmatter) => {
