@@ -7,10 +7,20 @@ import { ExerciseFour } from '../components/ExerciseFour';
 import { ExerciseFive } from '../components/ExerciseFive';
 
 export const createComponents = () => ({
-  h1: ({ children }) => <h1 className="font-bold text-2xl">{children}</h1>,
-  p: ({ children }) => <p className="text-left break-words">{children}</p>,
+  h1: ({ children }) => (
+    <h1 className="font-bold text-2xl text-green-700 mt-10 mx-5 mb-5">
+      {children}
+    </h1>
+  ),
+  h2: ({ children }) => (
+    <h2 className="font-bold text-2xl mt-10 mx-5 mb-5">{children}</h2>
+  ),
+  p: ({ children }) => <p className="text-left break-words mb-4">{children}</p>,
+  ol: ({ children }) => (
+    <ol className="list-decimal list-inside">{children}</ol>
+  ),
 });
-// margin nadpisum = mezera 
+// margin nadpisum = mezera
 export const createExerciseComponents = (frontmatter) => {
   return {
     ...createComponents(),

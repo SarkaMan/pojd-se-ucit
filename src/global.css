@@ -6,6 +6,7 @@
 
 
 @layer base {
+
   h1,
   h2,
   h3,
@@ -17,5 +18,9 @@
 
   p {
     @apply font-base
+  }
+
+  ol {
+    @apply flex flex-col gap-y-4;
   }
 }

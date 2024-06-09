@@ -19,7 +19,11 @@ export const ExerciseOne = ({ children: correctAnswer, definitions }) => {
   };
   return (
     <>
-      <select value={answer} onChange={evaluateAnswer}>
+      <select
+        className="mt-1.5 ml-3 w-fit inline rounded-lg border-gray-300 text-gray-700 sm:text-sm"
+        value={answer}
+        onChange={evaluateAnswer}
+      >
         <option value=""></option>
         {Object.keys(definitions).map((option) => (
           <option key={option} value={option}>

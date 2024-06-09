@@ -12,13 +12,28 @@ definitions:
   silence: a period without any sound
 ---
 
-**Jdeme na to! Je tu rychlá akce - krátký článek, krátká cvičení, 10 výrazů. Některé už jistě znáš a ty co neznáš, zopakuješ tolikrát, že už je budeš znát taky. Chceš vědět, co daný výraz znamená? Stačí na něj kliknout. Že znáš i další význam uvedeného výrazu? Tím lépe pro tebe! Pro účel našich cvičení však bude stačit uvedené vysvětlení.**
+import { Cviceni } from '../../components/Cviceni';
 
-**Konec řečí. Protáhni prsty, přepni mozek na příslušnou jazykovou mutaci a pusť se do toho.**
+<div className="my-5 shadow-md relative bg-white mx-auto w-9/12 px-5 py-8   rounded-md">
+  **Jdeme na to! Je tu rychlá akce - krátký článek, krátká cvičení, 10 výrazů.
+  Některé už jistě znáš a ty co neznáš, zopakuješ tolikrát, že už je budeš znát
+  taky. Chceš vědět, co daný výraz znamená? Stačí na něj kliknout. Že znáš i
+  další význam uvedeného výrazu? Tím lépe pro tebe! Pro účel našich cvičení však
+  bude stačit uvedené vysvětlení.**
+  
+  **Konec řečí. Protáhni prsty, přepni mozek na příslušnou jazykovou mutaci a pusť se do toho.**
 
+</div>
+
+
+
+<img className="mx-auto rounded-md" src="/article/eng.jpg" alt="park"/>
+
+
+{/* ![alt Ibirapuera park](/article/eng.jpg) */}
+
+<article className="shadow-md relative bg-white mx-auto w-9/12 px-5 py-8  mt-[-150px] rounded-md">
 # Ibirapuera Park
-
-![alt Ibirapuera park](/article/eng.jpg)
 
 Designed by landscape architect Roberto Burle Marx, Ibirapuera Park is
 Sao Paulo’s answer to New York’s Central Park. As the largest park in
@@ -43,6 +58,7 @@ but museums charge separate fees. Thanks to a network of
 :term[paved] pathways, Ibirapuera Park is wheelchair and stroller accessible.
 
 The park itself is typically open from the early hours of the morning until midnight and 24 hours on weekends. In January and July each year, the Biennial Pavilion hosts São Paulo Fashion Week, as well as trade shows and :term[biennials]{expression=biennial} throughout the year. The park’s museums are open throughout the year—usually from morning until early evening, but may be closed on select days of the week. This is the perfect place where you definitely can find the :term[silence] in one of the biggest cities in the world.
+</article>
 
 # Cvičení 1
 
@@ -76,7 +92,7 @@ The park itself is typically open from the early hours of the morning until midn
 1. There's a high correlation between smoking and :input[lung] cancer.
 1. Seeds that germinate in late autumn become :input[biennials].
 1. We'll update you on this news story :input[throughout] the day.
-1. 8. It's a small town with limited parking, so best explored :input[on foot] .
+1. It's a small town with limited parking, so best explored :input[on foot] .
 1. The plan :input[encompasses] repaving the street and planting 40 new trees.
 1. The new scheme is aimed :input[primarily] at teenagers.
 
@@ -88,10 +104,12 @@ The park itself is typically open from the early hours of the morning until midn
 
 :::exercise
 
-::imgQuestion[silence]{img="anglictina/Ticho.png"}
-::imgQuestion[on foot]{img="anglictina/Chůze.png"}
-::imgQuestion[lung]{img="anglictina/Plíce.png"}
-::imgQuestion[paved]{img="anglictina/Silnice.png"}
+<Cviceni>
+  ::imgQuestion[silence]{img = 'anglictina/Ticho.png'}
+  ::imgQuestion[on foot]{img = 'anglictina/Chůze.png'}
+  ::imgQuestion[lung]{img = 'anglictina/Plíce.png'}
+  ::imgQuestion[paved]{img = 'anglictina/Silnice.png'}
+</Cviceni>
 
 :::
 

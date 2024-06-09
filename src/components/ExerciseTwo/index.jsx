@@ -18,6 +18,17 @@ export const ExerciseTwo = ({ children: correctAnswer }) => {
     }
   };
   return (
-    <input type="text" id="answer" value={answer} onChange={evaluateAnswer} />
+    <div className="w-fit inline">
+      <label>
+        <span className="sr-only">Answer</span>
+
+        <input
+          type="text"
+          value={answer}
+          onChange={evaluateAnswer}
+          className="w-fit rounded-md border-gray-200 pe-10 shadow-sm sm:text-sm"
+        />
+      </label>
+    </div>
   );
 };

@@ -20,6 +20,7 @@ export const ExerciseFour = ({ children: correctAnswer, id }) => {
   return (
     <div>
       <iframe
+        className="mx-auto my-5"
         width="560"
         height="315"
         src={`https://www.youtube.com/embed/${id}`}
@@ -29,7 +30,15 @@ export const ExerciseFour = ({ children: correctAnswer, id }) => {
         referrerpolicy="strict-origin-when-cross-origin"
         allowfullscreen
       ></iframe>
-      <input type="text" id="answer" value={answer} onChange={evaluateAnswer} />
+      <label>
+        <span className="sr-only">Answer</span>
+        <input
+          className="mt-10 w-fit rounded-md border-gray-200 pe-10 shadow-sm sm:text-sm"
+          type="text"
+          value={answer}
+          onChange={evaluateAnswer}
+        />
+      </label>
     </div>
   );
 };

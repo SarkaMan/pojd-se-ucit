@@ -38,17 +38,23 @@ export const Exercise = ({ children }) => {
       disabled = true;
     }
   });
+
+  console.log(disabled);
   return (
     <>
       <AnswersContext.Provider value={setAnswer}>
         {children}
       </AnswersContext.Provider>
       <div>
-        <button disabled={disabled} onClick={handleClick}>
+        <button
+          className="inline-block rounded border border-gray-200 bg-green-700 px-12 py-3 font-medium text-white enabled:hover:bg-transparent enabled:hover:text-green-700 focus:outline-none focus:ring text-base mx-5 my-5 disabled:bg-gray-200"
+          disabled={disabled}
+          onClick={handleClick}
+        >
           Vyhodnotit
         </button>
         {showResult && (
-          <span>
+          <span className="font-bold text-2xl text-green-700 ml-2">
             Správné odpovědi: {correctAnswers}/{answerCount}
           </span>
         )}

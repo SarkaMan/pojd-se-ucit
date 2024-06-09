@@ -6,7 +6,7 @@ import { Header } from '../Header';
 export const App = () => (
   <>
     <Header />
-    <main className="px-20">
+    <main className="container mx-auto text-lg max-w-5xl">
       <Outlet />
     </main>
     <Footer />

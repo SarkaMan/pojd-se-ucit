@@ -9,7 +9,7 @@ export const ExerciseThree = ({ children: correctAnswer, img }) => {
 
     const userAnswer = event.target.value;
     setAnswer(userAnswer);
-    if (answer === '') {
+    if (userAnswer === '') {
       setAnswerValue(null);
     } else {
       const isCorrect =
@@ -18,9 +18,16 @@ export const ExerciseThree = ({ children: correctAnswer, img }) => {
     }
   };
   return (
-    <div>
+    <div className="flex flex-col basis-1/4 items-center">
       <img src={`/exercise/${img}`} />
-      <input type="text" id="answer" value={answer} onChange={evaluateAnswer} />
+      <label>
+        <span className="sr-only">Answer</span>
+        <input
+          className="mt-10 w-fit rounded-md border-gray-200 pe-10 shadow-sm sm:text-sm"
+          type="text"
+          onChange={evaluateAnswer}
+        />
+      </label>
     </div>
   );
 };
