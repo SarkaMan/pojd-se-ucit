@@ -23,20 +23,24 @@ const languages = [
   },
 ];
 
+
+
 export const HomePage = () => {
   return (
-    <>
+    <div className="">
       <About components={createComponents()} />
+      <div className='flex  gap-3'>
       {languages.map((language) => {
         return (
-          <LanguageCard
-            name={language.name}
+          <LanguageCard 
+            name={language.name} 
             flag={language.flag}
             description={language.description}
             key={language.name}
           />
         );
       })}
-    </>
+      </div>
+    </div>
   );
 };

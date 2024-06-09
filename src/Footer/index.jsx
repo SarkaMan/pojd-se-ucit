@@ -1,15 +1,11 @@
 import React from 'react';
 // import './style.css';
 
+
 export const Footer = () => (
-  <footer>
-    <div className="container">
-      <div className="footer-title">
-        LeviExpress
-      </div>
-      <div className="copyright">
+  <footer className='flex items-center justify-center bg-yellow-200 pt-3'>
+      <div className="text-center">
         Czechitas Digitální akademie: Web, © 2024
       </div>
-    </div>
   </footer>
 );

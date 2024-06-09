@@ -7,8 +7,9 @@ import { ExerciseFour } from '../components/ExerciseFour';
 
 export const createComponents = () => ({
   h1: ({ children }) => <h1 className="font-bold text-2xl">{children}</h1>,
+  p: ({ children }) => <p className="text-left break-words">{children}</p>,
 });
-
+// margin nadpisum = mezera 
 export const createExerciseComponents = (frontmatter) => {
   return {
     ...createComponents(),
