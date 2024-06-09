@@ -6,7 +6,8 @@ import { Header } from '../Header';
 export const App = () => (
   <>
     <Header />
-    <main className="px-20">
+    <main className="px-5 ">
+      
       <Outlet />
     </main>
     <Footer />

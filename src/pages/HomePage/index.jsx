@@ -29,7 +29,7 @@ export const HomePage = () => {
   return (
     <div className="">
       <About components={createComponents()} />
-      <div className='flex  gap-3'>
+      <div className='flex  gap-5'>
       {languages.map((language) => {
         return (
           <LanguageCard 

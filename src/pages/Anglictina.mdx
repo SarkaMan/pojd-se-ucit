@@ -1,73 +1,53 @@
+import {Books, obsahKnihAnglictina}  from "../components/Books"
+import {Films, obsahFilmAnglictina} from "../components/Films"
+import {Interests, obsahZajimavostiAnglictina} from "../components/Interest"
+import {Infos, obsahInformaceAnglictina} from "../components/Info"
+// import {Abc} from "../components/Abeceda"
 
+{/* # Angličtina */}
 
-# Anhličtina
+{/* ## Informace o jazyku 
+Angličtina je západogermánský jazyk, který vznikl v Anglii a stal se globálním komunikačním prostředkem. Je oficiálním jazykem v mnoha zemích světa a používá se v mezinárodních institucích, obchodu a vědě. Angličtina má bohatou slovní zásobu a je známa svou flexibilitou a schopností přejímat slova z jiných jazyků. 
 
-# Informace o jazyku 
-Angličtina je západogermánský jazyk, který vznikl v Anglii a stal se globálním komunikačním prostředkem. Je oficiálním jazykem v mnoha zemích světa a používá se v mezinárodních institucích, obchodu a vědě. Angličtina má bohatou slovní zásobu a je známa svou flexibilitou a schopností přejímat slova z jiných jazyků.
-
-# Kde se tak mluví
+## Kde se tak mluví
 Angličtina jako úřední jazyk, příp. jeden z úředních jazyků, figuruje samozřejmě ve Spojeném království, Spojených státech, Irsku, Kanadě, Austrálii nebo na Novém Zélandu.
-Angličtinu ale zaslechneme takřka po celém světě. Hojně v bývalých koloniích Velké Británie, méně či více hojně v zemích dalších.
-  
-# Zajímavosti 
-Vzdušný jazyk
-Tímto souslovím se angličtina neoznačuje proto, že by nám její vyslovování šetřilo plíce. Jde o to, že i v leteckém prostoru také funguje jako lingva franka. To znamená, že jako pilot musíte zvládat v angličtině komunikovat – jinak to totiž nejde.
+Angličtinu ale zaslechneme takřka po celém světě. Hojně v bývalých koloniích Velké Británie, méně či více hojně v zemích dalších. */}
+<Infos obsahInformace={obsahInformaceAnglictina} />
+<div className="mt-10"/>
 
-Méně slov k domluvě než peněz za dva obědy
+{/* 
+<img src="./obrazky/abeceda.png" alt="Moje fotka" className="w-1/4 float-left mr-4 rounded-lg" /> */}
+{/* <Abc /> */}
+<div className="mt-2"/>
+
+<Interests obsahZajimavosti={obsahZajimavostiAnglictina} />
+
+{/*   
+## Zajímavosti 
+### Vzdušný jazyk
+Tímto souslovím se angličtina neoznačuje proto, že by nám její vyslovování šetřilo plíce.
+ -Jde o to, že i v leteckém prostoru také funguje jako lingva franka. To znamená, že jako pilot musíte zvládat v angličtině komunikovat – jinak to totiž nejde.
+
+### Méně slov k domluvě než peněz za dva obědy
 Abyste se dokázali alespoň základně domluvit, stačí údajně znát jen 150–300 slov. To je méně slov než peněz za dva obědy. A to se vyplatí! Nebo ne?
  
-Česká slova v angličtině
+### Česká slova v angličtině
 V našem jazyce máme mnoho anglicismů, tedy slov, které se z angličtiny dostali sem. Funguje to ale i naopak?
 Možná se budete divit, ale ano. Sice to nejsou mraky slov (vlastně ani mráčky.. nebo jeden), ale některá existují. A která že to jsou?
-•	robot – asi všem známé slovo vymyšlené panem Čapkem (a víte kterým?) pro román R.U.R.
-•	pilsner – plzeňské pivo
-
- 
+- robot: asi všem známé slovo vymyšlené panem Čapkem (a víte kterým?) pro román R.U.R.
+-	pilsner: plzeňské pivo */}
 
 
-# Tipy na učení
 
-#  KLASICKÁ LITERATURA
-Pride and Prejudice od Jane Austen
-1984 od George Orwell
-The Great Gatsby od F. Scott Fitzgerald
-To Kill a Mockingbird od Harper Lee
-
-# Fantasy a sci-fi
-The Lord of the Rings od J.R.R. Tolkien
-Harry Potter série od J.K. Rowling
-Dune od Frank Herbert
-Ender's Game od Orson Scott Card
-
-# Detektivky a thrillery
-The Da Vinci Code od Dan Brown
-Sherlock Holmes série od Arthur Conan Doyle
-The Silent Patient od Alex Michaelides
-The Girl with the Dragon Tattoo od Stieg Larsson
-
-# ROMANTIKA
-Me Before You od Jojo Moyes
-The Notebook od Nicholas Sparks
-P.S. I Love You od Cecelia Ahern
-Outlander od Diana Gabaldon
-
-# Literatura faktu a autobiografie
-Steve Jobs od Walter Isaacson
-Educated od Tara Westover
-Becoming od Michelle Obama
-The Immortal Life of Henrietta Lacks od Rebecca Skloot
+<div className="mt-20"/>
 
 
-# JEDNODUCHÉ FILMY
-Toy Story (1995) - Animovaný film s jednoduchými dialogy.
-Forrest Gump (1994) - Film s jednoduchou angličtinou a pomalejší výslovností hlavní postavy.
-The Pursuit of Happyness (2006)
-Finding Nemo (2003) - Populární animovaný film s jednoduchým a zábavným dialogem.
+# TIPY NA UČENÍ
+<Books obsahKnih={obsahKnihAnglictina} />
 
-# SERIÁLY
-Friends - Velmi populární sitcom s jednoduchými a každodenními dialogy.
-How I Met Your Mother - Další sitcom s jasnými dialogy a zábavnými příběhy.
-Stranger Things - Sci-fi seriál s jednoduchým a přístupným jazykem.
-The Office (US)
+<div className="mt-10"/>
+
+<Films obsahFilm={obsahFilmAnglictina} />
+
 
 
