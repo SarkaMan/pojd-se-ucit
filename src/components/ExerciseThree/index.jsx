@@ -20,10 +20,11 @@ export const ExerciseThree = ({ children: correctAnswer, img }) => {
   return (
     <div className="flex flex-col basis-1/4 items-center">
       <img src={`/exercise/${img}`} />
+
       <label>
         <span className="sr-only">Answer</span>
         <input
-          className="mt-10 w-fit rounded-md border-gray-200 pe-10 shadow-sm sm:text-sm"
+          className="mt-10 w-fit rounded-md border-gray-300 pe-10 shadow-sm sm:text-sm text-gray-900 focus:border-gray-400 focus:ring-gray-400"
           type="text"
           onChange={evaluateAnswer}
         />

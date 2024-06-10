@@ -20,7 +20,7 @@ export const ExerciseOne = ({ children: correctAnswer, definitions }) => {
   return (
     <>
       <select
-        className="mt-1.5 ml-3 w-fit inline rounded-lg border-gray-300 text-gray-700 sm:text-sm"
+        className="mt-1.5 ml-3 w-fit inline rounded-lg border-gray-300 text-gray-900 sm:text-sm focus:border-gray-400 focus:ring-gray-400 shadow-sm"
         value={answer}
         onChange={evaluateAnswer}
       >

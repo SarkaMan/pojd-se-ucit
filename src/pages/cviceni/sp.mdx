@@ -12,9 +12,15 @@ definitions:
   explicación: aclaración del motivo o causa de algo
 ---
 
-**Jdeme na to! Je tu rychlá akce - krátký článek, krátká cvičení, 10 výrazů. Některé už jistě znáš a ty co neznáš, zopakuješ tolikrát, že už je budeš znát taky. Chceš vědět, co daný výraz znamená? Stačí na něj kliknout. Že znáš i další význam uvedeného výrazu? Tím lépe pro tebe! Pro účel našich cvičení však bude stačit uvedené vysvětlení.**
+import { Cviceni } from '../../components/Cviceni';
+import { Task1 } from '../../components/Task1'
+import { Task2 } from '../../components/Task2'
+import { Task3 } from '../../components/Task3'
+import { Task4 } from '../../components/Task4'
+import { Task5 } from '../../components/Task5'
+import { Introduction } from '../../components/Introduction'
 
-**Konec řečí. Protáhni prsty, přepni mozek na příslušnou jazykovou mutaci a pusť se do toho.**
+<Introduction></Introduction>
 
 # Festival de patios cordobeses
 
@@ -28,9 +34,7 @@ Los patios de Córdoba son una herencia de la cultura romana adaptada a las cond
 
 El :term[ayuntamiento] ofrece mapas especiales para la ocasión con una guía con itinerarios recomendados y :term[explicaciones]{expression=explicación}. Sin embargo, es aconsejable “callejear” sin rumbo y dejarse guiar por los vecinos que siempre conocen el mejor patio de la ciudad.
 
-# Cvičení 1
-
-**Spáruj výrazy podle nejlepšího vědomí a svědomí.**
+<Task1></Task1>
 
 :::exercise
 
@@ -47,9 +51,7 @@ El :term[ayuntamiento] ofrece mapas especiales para la ocasión con una guía co
 
 :::
 
-# Cvičení 2
-
-**Věta světa. Doplň správné slovo. Bacha! Gramatická správnost je také nutná.**
+<Task2></Task2>
 
 :::exercise
 
@@ -66,22 +68,20 @@ El :term[ayuntamiento] ofrece mapas especiales para la ocasión con una guía co
 
 :::
 
-# Cvičení 3
-
-**Trocha relaxace pro oči. Napiš pod obrázek, který výraz je zde znázorněn. Schválně, jestli to vidíme stejně.**
+<Task3></Task3>
 
 :::exercise
 
+<Cviceni>
 ::imgQuestion[patio]{img="spanelstina/Dvůr.png"}
 ::imgQuestion[maceta]{img="spanelstina/Květináč.png"}
 ::imgQuestion[fuente]{img="spanelstina/Fontána.png"}
 ::imgQuestion[rosa]{img="spanelstina/Růže.png"}
+</Cviceni>
 
 :::
 
-# Cvičení 4
-
-**Teď ty zrelaxované oči zavři a ponoř se do hudby. Soustřeď se na každé slovo, ať zachytíš to naše. Opět vepiš do rámečku. (Note: Až zvládneme i další funkcionality v JavaScriptu, tak nebudeš muset pořád vypisovat odpovědi do textového pole, I promise!).**
+<Task4></Task4>
 
 :::exercise
 
@@ -89,8 +89,9 @@ El :term[ayuntamiento] ofrece mapas especiales para la ocasión con una guía co
 
 :::
 
-**No super, jsi na konci! A teď výzva. Nachystala jsem si pro tebe větu, která v sobě obsahuje všechny dnes pokořené výrazy. Že ta moje věta nedává moc smysl? Vymyslíš vlastní? Ano? Ne? Tak aspoň do posledního textového pole napiš všech 10 výrazů a nech se překvapit, jak to naše webová aplikace vyhodnotí. Sama jsem zvědavá, co jsme tam naprogramovaly.**
 
-# Cvičení 5
+<Task5></Task5>
+
+"En el patio, la maestra enseñó cómo cuidar una rosa en una maceta. Explicó que, aunque es difícil desarrollar una planta, es posible. Al anochecer, todos se reunieron en la fuente del ayuntamiento para escuchar más."
 
 ::sentence

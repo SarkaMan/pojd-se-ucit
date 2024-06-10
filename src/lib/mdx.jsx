@@ -15,7 +15,9 @@ export const createComponents = () => ({
   h2: ({ children }) => (
     <h2 className="font-bold text-2xl mt-10 mx-5 mb-5">{children}</h2>
   ),
-  p: ({ children }) => <p className="text-left break-words mb-4">{children}</p>,
+  p: ({ children }) => (
+    <p className="text-left break-words mb-4 font-regular">{children}</p>
+  ),
   ol: ({ children }) => (
     <ol className="list-decimal list-inside">{children}</ol>
   ),

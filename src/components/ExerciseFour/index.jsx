@@ -9,7 +9,7 @@ export const ExerciseFour = ({ children: correctAnswer, id }) => {
 
     const userAnswer = event.target.value;
     setAnswer(userAnswer);
-    if (answer === '') {
+    if (userAnswer === '') {
       setAnswerValue(null);
     } else {
       const isCorrect =
@@ -20,7 +20,7 @@ export const ExerciseFour = ({ children: correctAnswer, id }) => {
   return (
     <div>
       <iframe
-        className="mx-auto my-5"
+        className="mx-auto my-5 pt-10 shadow-lg rounded border-5"
         width="560"
         height="315"
         src={`https://www.youtube.com/embed/${id}`}
@@ -33,7 +33,7 @@ export const ExerciseFour = ({ children: correctAnswer, id }) => {
       <label>
         <span className="sr-only">Answer</span>
         <input
-          className="mt-10 w-fit rounded-md border-gray-200 pe-10 shadow-sm sm:text-sm"
+          className="mt-10 w-fit rounded-md border-gray-300 pe-10 shadow-sm sm:text-sm text-gray-900 focus:border-gray-400 focus:ring-gray-400"
           type="text"
           value={answer}
           onChange={evaluateAnswer}

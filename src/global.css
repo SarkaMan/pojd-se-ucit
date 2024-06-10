@@ -23,4 +23,8 @@
   ol {
     @apply flex flex-col gap-y-4;
   }
+
+  body {
+    @apply bg-yellow-50
+  }
 }

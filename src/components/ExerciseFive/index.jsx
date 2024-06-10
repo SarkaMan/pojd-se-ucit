@@ -23,9 +23,9 @@ export const ExerciseFive = ({ definitions }) => {
   };
   return (
     <>
-      <div className="overflow-hidden rounded-lg border border-gray-200 shadow-sm focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600">
+      <div className="overflow-hidden rounded-lg border border-gray-200 shadow-sm focus-within:border-gray-400 focus-within:ring-1 focus-within:ring-gray-400">
         <textarea
-          className="w-full resize-none border-none align-top focus:ring-0 sm:text-sm"
+          className="w-full resize-none border-none align-top focus:ring-0 sm:text-sm rounded-md border-gray-300 pe-10 shadow-sm text-gray-900 focus:border-gray-400 focus:ring-gray-400"
           rows="4"
           value={answer}
           onChange={(event) => setAnswer(event.target.value)}
@@ -33,9 +33,9 @@ export const ExerciseFive = ({ definitions }) => {
           {' '}
         </textarea>
       </div>
-      <div className="flex gap-4">
+      <div className="flex gap-4 pb-20">
         <button
-          className="inline-block rounded border border-green-700 bg-green-700 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-green-700 focus:outline-none focus:ring active:text-indigo-500 text-base my-5 mx-5"
+          className="inline-block rounded border border-gray-200 bg-green-700 px-12 py-3 font-medium text-white enabled:hover:bg-transparent enabled:hover:text-green-700 focus:outline-none focus:ring text-base mx-5 my-5 disabled:bg-gray-200"
           onClick={evaluateAnswer}
         >
           Vyhodnotit

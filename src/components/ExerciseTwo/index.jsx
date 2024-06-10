@@ -26,7 +26,7 @@ export const ExerciseTwo = ({ children: correctAnswer }) => {
           type="text"
           value={answer}
           onChange={evaluateAnswer}
-          className="w-fit rounded-md border-gray-200 pe-10 shadow-sm sm:text-sm"
+          className="w-fit rounded-md border-gray-300 pe-10 shadow-sm sm:text-sm  text-gray-900 focus:border-gray-400 focus:ring-gray-400 "
         />
       </label>
     </div>

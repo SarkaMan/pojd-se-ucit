@@ -12,9 +12,15 @@ definitions:
   cruzar: fazer passar de um lado para o outro/encontrar-se com alguém
 ---
 
-**Jdeme na to! Je tu rychlá akce - krátký článek, krátká cvičení, 10 výrazů. Některé už jistě znáš a ty co neznáš, zopakuješ tolikrát, že už je budeš znát taky. Chceš vědět, co daný výraz znamená? Stačí na něj kliknout. Že znáš i další význam uvedeného výrazu? Tím lépe pro tebe! Pro účel našich cvičení však bude stačit uvedené vysvětlení.**
+import { Cviceni } from '../../components/Cviceni';
+import { Task1 } from '../../components/Task1'
+import { Task2 } from '../../components/Task2'
+import { Task3 } from '../../components/Task3'
+import { Task4 } from '../../components/Task4'
+import { Task5 } from '../../components/Task5'
+import { Introduction } from '../../components/Introduction'
 
-**Konec řečí. Protáhni prsty, přepni mozek na příslušnou jazykovou mutaci a pusť se do toho.**
+<Introduction></Introduction>
 
 # Carta das férias na Espanha
 
@@ -29,9 +35,7 @@ Bom, acabamos de chegar (há poucas horas) em Granada, uma cidade bem quente. De
 
 Estamos nos virando superbem com nosso portunhol e comemos muito bem. Também temos conhecido bastante gente – fora o tanto de brasileiros com quem já :term[cruzamos]{expression=cruzar} pelo caminho. Bom, beijocas a todos!
 
-# Cvičení 1
-
-**Spáruj výrazy podle nejlepšího vědomí a svědomí.**
+<Task1></Task1>
 
 :::exercise
 
@@ -48,9 +52,7 @@ Estamos nos virando superbem com nosso portunhol e comemos muito bem. Também te
 
 :::
 
-# Cvičení 2
-
-**Věta světa. Doplň správné slovo. Bacha! Gramatická správnost je také nutná.**
+<Task2></Task2>
 
 :::exercise
 
@@ -67,22 +69,20 @@ Estamos nos virando superbem com nosso portunhol e comemos muito bem. Também te
 
 :::
 
-# Cvičení 3
-
-**Trocha relaxace pro oči. Napiš pod obrázek, který výraz je zde znázorněn. Schválně, jestli to vidíme stejně.**
+<Task3></Task3>
 
 :::exercise
 
+<Cviceni>
 ::imgQuestion[aperitivos]{img="portugalstina/Předkrm.png"}
 ::imgQuestion[pegar uma cor]{img="portugalstina/Opalování.png"}
 ::imgQuestion[acordar]{img="portugalstina/Vstávání.png"}
 ::imgQuestion[albergue]{img="portugalstina/Ubytování.png"}
+</Cviceni>
 
 :::
 
-# Cvičení 4
-
-**Teď ty zrelaxované oči zavři a ponoř se do hudby. Soustřeď se na každé slovo, ať zachytíš to naše. Opět vepiš do rámečku. (Note: Až zvládneme i další funkcionality v JavaScriptu, tak nebudeš muset pořád vypisovat odpovědi do textového pole, I promise!).**
+<Task4></Task4>
 
 :::exercise
 
@@ -90,8 +90,8 @@ Estamos nos virando superbem com nosso portunhol e comemos muito bem. Também te
 
 :::
 
-**No super, jsi na konci! A teď výzva. Nachystala jsem si pro tebe větu, která v sobě obsahuje všechny dnes pokořené výrazy. Že ta moje věta nedává moc smysl? Vymyslíš vlastní? Ano? Ne? Tak aspoň do posledního textového pole napiš všech 10 výrazů a nech se překvapit, jak to naše webová aplikace vyhodnotí. Sama jsem zvědavá, co jsme tam naprogramovaly.**
+<Task5></Task5>
 
-# Cvičení 5
+"Fui à cidade e encontrei um albergue de graça. Saí para pegar uma cor e acordei me sentindo morto. Dei uma volta, conferi as barracas, comprei aperitivos e cruzei com um amigo. Foi ótimo!"
 
 ::sentence
