@@ -1,15 +1,8 @@
+import { LearningType } from "../LearningType";
+
 const Book = ({ name, book1, book2, book3, book4 }) => {
   return (
-    <div className="w-full sm:w-1/2 px-2 rounded-lg overflow-hidden bg-white shadow-lg">
-    <div className="p-4">
-      <h1 className="text-xl font-medium mb-2"> {name} </h1>
-      <p> {book1} </p>
-      <p> {book2} </p>
-      <p> {book3} </p>
-      <p> {book4} </p>
-      </div>
-      </div>
-    
+    <LearningType name={name} item1={book1} item2={book2} item3={book3} item4={book4} />
   );
 };
 

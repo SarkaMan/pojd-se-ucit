@@ -1,14 +1,8 @@
+import { LearningType } from "../LearningType";
+
 const Film = ({ name, film1, film2, film3, film4 }) => {
   return (
-    <div className="w-full sm:w-1/2 px-2 rounded-lg overflow-hidden bg-white shadow-lg">
-    <div className="p-4">
-      <h1 className="text-xl font-medium mb-2 "> {name} </h1>
-      <p> {film1} </p>
-      <p> {film2} </p>
-      <p> {film3} </p>
-      <p> {film4} </p>
-      </div>
-      </div>
+    <LearningType name={name} item1={film1} item2={film2} item3={film3} item4={film4} />
   );
 };
 

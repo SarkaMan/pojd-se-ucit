@@ -20,6 +20,7 @@ export const createComponents = () => ({
     <ol className="list-decimal list-inside">{children}</ol>
   ),
   h3: ({ children }) => <h3 className="font-bold text-xl m-2">{children}</h3>,
+  h4: ({ children }) => <h4 className="font-bold text-2xl text-green-700 m-2">{children}</h4>,
 });
 
 export const createExerciseComponents = (frontmatter) => {
