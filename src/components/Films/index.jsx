@@ -10,17 +10,17 @@ const Film = ({ name, film1, film2, film3, film4 }) => {
 export const obsahFilmAnglictina = [
   {
     name: 'Filmy',
-    film1: 'Toy Story (1995) - Animovaný film s jednoduchými dialogy.',
-    film2: 'Forrest Gump (1994) - Film s jednoduchou angličtinou a pomalejší výslovností hlavní postavy.',
-    film3: 'The Pursuit of Happyness (2006)',
-    film4: 'Finding Nemo (2003) - Populární animovaný film s jednoduchým a zábavným dialogem.',
+    film1: '- Toy Story (1995) - Animovaný film s jednoduchými dialogy.',
+    film2: '- Forrest Gump (1994) - Film s jednoduchou angličtinou a pomalejší výslovností hlavní postavy.',
+    film3: '- The Pursuit of Happyness (2006)',
+    film4: '- Finding Nemo (2003) - Populární animovaný film s jednoduchým a zábavným dialogem.',
   },
   {
     name: 'Seriály',
-    film1: 'Friends - Velmi populární sitcom s jednoduchými a každodenními dialogy.',
-    film2: 'How I Met Your Mother - Další sitcom s jasnými dialogy a zábavnými příběhy.',
-    film3: 'Stranger Things - Sci-fi seriál s jednoduchým a přístupným jazykem.',
-    film4: "The Office (US)",
+    film1: '- Friends - Velmi populární sitcom s jednoduchými a každodenními dialogy.',
+    film2: '- How I Met Your Mother - Další sitcom s jasnými dialogy a zábavnými příběhy.',
+    film3: '- Stranger Things - Sci-fi seriál s jednoduchým a přístupným jazykem.',
+    film4: "- The Office (US)",
   },
 ];
 
@@ -67,17 +67,17 @@ const FilmSj = ({ name, film1, film2, film3, film4 }) => {
 export const obsahFilmSpanelstina = [
   {
     name: 'Filmy',
-    film1: 'Toy Story (1995) - Animovaný film s jednoduchými dialogy.',
-    film2: 'Forrest Gump (1994) - Film s jednoduchou angličtinou a pomalejší výslovností hlavní postavy.',
-    film3: 'The Pursuit of Happyness (2006)',
-    film4: 'Finding Nemo (2003) - Populární animovaný film s jednoduchým a zábavným dialogem.',
+    film1: '- Toy Story (1995) - Animovaný film s jednoduchými dialogy.',
+    film2: '- Forrest Gump (1994) - Film s jednoduchou angličtinou a pomalejší výslovností hlavní postavy.',
+    film3: '- The Pursuit of Happyness (2006)',
+    film4: '- Finding Nemo (2003) - Populární animovaný film s jednoduchým a zábavným dialogem.',
   },
   {
     name: 'Seriály',
-    film1: 'Friends - Velmi populární sitcom s jednoduchými a každodenními dialogy.',
-    film2: 'How I Met Your Mother - Další sitcom s jasnými dialogy a zábavnými příběhy.',
-    film3: 'Stranger Things - Sci-fi seriál s jednoduchým a přístupným jazykem.',
-    film4: "The Office (US)",
+    film1: '- Friends - Velmi populární sitcom s jednoduchými a každodenními dialogy.',
+    film2: '- How I Met Your Mother - Další sitcom s jasnými dialogy a zábavnými příběhy.',
+    film3: '- Stranger Things - Sci-fi seriál s jednoduchým a přístupným jazykem.',
+    film4: "- The Office (US)",
   },
 ];
 
@@ -122,17 +122,17 @@ const FilmPtg = ({ name, film1, film2, film3, film4 }) => {
 export const obsahFilmPortugalstina = [
   {
     name: 'Filmy',
-    film1: 'Toy Story (1995) - Animovaný film s jednoduchými dialogy.',
-    film2: 'Forrest Gump (1994) - Film s jednoduchou angličtinou a pomalejší výslovností hlavní postavy.',
-    film3: 'The Pursuit of Happyness (2006)',
-    film4: 'Finding Nemo (2003) - Populární animovaný film s jednoduchým a zábavným dialogem.',
+    film1: '- Toy Story (1995) - Animovaný film s jednoduchými dialogy.',
+    film2: '- Forrest Gump (1994) - Film s jednoduchou angličtinou a pomalejší výslovností hlavní postavy.',
+    film3: '- The Pursuit of Happyness (2006)',
+    film4: '- Finding Nemo (2003) - Populární animovaný film s jednoduchým a zábavným dialogem.',
   },
   {
     name: 'Seriály',
-    film1: 'Friends - Velmi populární sitcom s jednoduchými a každodenními dialogy.',
-    film2: 'How I Met Your Mother - Další sitcom s jasnými dialogy a zábavnými příběhy.',
-    film3: 'Stranger Things - Sci-fi seriál s jednoduchým a přístupným jazykem.',
-    film4: "The Office (US)",
+    film1: '- Friends - Velmi populární sitcom s jednoduchými a každodenními dialogy.',
+    film2: '- How I Met Your Mother - Další sitcom s jasnými dialogy a zábavnými příběhy.',
+    film3: '- Stranger Things - Sci-fi seriál s jednoduchým a přístupným jazykem.',
+    film4: "- The Office (US)",
   },
 ];
 

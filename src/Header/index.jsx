@@ -15,13 +15,13 @@ export const Header = () => (
   <p className='text-5xl font-medium mr-80 '> POJĎ se UČIT </p>
   <nav>
     <ul className="flex space-x-4 ">
-      <MenuItem itemName={"Domů"} to={"/"}/>
+      <MenuItem itemName={"Úvod"} to={"/"}/>
       <MenuItem itemName={"Angličtina"} to={"/anglictina"}/>
       <MenuItem itemName={"Španělština"} to={"/spanelstina"}/>
       <MenuItem itemName={"Portugalština"} to={"/portugalstina"}/>
-      <MenuItem itemName={"Angličtina-cvičení"} to={"/anglictina/cviceni"}/>
-      <MenuItem itemName={"Španělština-cvičení"} to={"/spanelstina/cviceni"}/>
-      <MenuItem itemName={"Portugalština-cvičení"} to={"/portugalstina/cviceni"}/>
+      <MenuItem itemName={"AJ-cvičení"} to={"/anglictina/cviceni"}/>
+      <MenuItem itemName={"ŠJ-cvičení"} to={"/spanelstina/cviceni"}/>
+      <MenuItem itemName={"PTG-cvičení"} to={"/portugalstina/cviceni"}/>
     </ul>
   </nav>
   </header>

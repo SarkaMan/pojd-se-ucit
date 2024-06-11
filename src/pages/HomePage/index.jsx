@@ -41,6 +41,8 @@ export const HomePage = () => {
         );
       })}
       </div>
+      <div className="w-full sm:w-1/2 px-2 rounded-lg overflow-hidden bg-white shadow-lg mt-10"/>
+      <div className="mt-10"/>
     </div>
   );
 };
