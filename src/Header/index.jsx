@@ -1,24 +1,27 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-// import './style.css';
+const MenuItem = ({to, itemName}) => {
+  return(
+      <li> 
+        <Link to={to} className="font-medium text-lg text-black hover:underline"> {itemName} </Link>
+       </li>
+  )
+}
 
-
-// pt-20
 
 export const Header = () => (
-  <header className='flex items-center justify-between bg-yellow-200 py-8 '>
-  <p className='text-5xl font-medium  '> POJĎ se UČIT </p>
+  <header className='flex items-center justify-evenly bg-yellow-400 py-8 '>
+  <p className='text-5xl font-medium mr-80 '> POJĎ se UČIT </p>
   <nav>
     <ul className="flex space-x-4 ">
-      <li> <Link to="/anglictina" className=" font-medium text-lg text-black hover:text-gray-700"> Angličtina </Link></li>
-      <li> <Link to="/spanelstina" className="font-medium text-lg hover:underline"> Španělština </Link> </li>
-      <li> <Link to="/portugalstina" className="font-medium text-lg hover:underline"> Portugalština </Link>  </li>
-      <li> <Link to="/anglictina/cviceni" className="font-medium text-lg hover:underline"> Angličtina-cvičení </Link>  </li>
-      <li> <Link to="/spanelstina/cviceni" className="font-medium text-lg hover:underline"> Španělština-cvičení </Link>  </li>
-      <li> <Link to="/portugalstina/cviceni" className="font-medium text-lg hover:underline"> Portugalština-cvičení </Link>  </li>
-      
-      {/* <li> <Link to="/procvicovani"></Link> Procvičování </li> */}
+      <MenuItem itemName={"Domů"} to={"/"}/>
+      <MenuItem itemName={"Angličtina"} to={"/anglictina"}/>
+      <MenuItem itemName={"Španělština"} to={"/spanelstina"}/>
+      <MenuItem itemName={"Portugalština"} to={"/portugalstina"}/>
+      <MenuItem itemName={"Angličtina-cvičení"} to={"/anglictina/cviceni"}/>
+      <MenuItem itemName={"Španělština-cvičení"} to={"/spanelstina/cviceni"}/>
+      <MenuItem itemName={"Portugalština-cvičení"} to={"/portugalstina/cviceni"}/>
     </ul>
   </nav>
   </header>

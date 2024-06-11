@@ -1,53 +1,18 @@
 import {Books, obsahKnihAnglictina}  from "../components/Books"
 import {Films, obsahFilmAnglictina} from "../components/Films"
-import {Interests, obsahZajimavostiAnglictina} from "../components/Interest"
-import {Infos, obsahInformaceAnglictina} from "../components/Info"
-// import {Abc} from "../components/Abeceda"
+import {Infos, obsahInformaceAnglictina, obsahZajimavostiAnglictina} from "../components/Info"
 
-{/* # Angličtina */}
-
-{/* ## Informace o jazyku 
-Angličtina je západogermánský jazyk, který vznikl v Anglii a stal se globálním komunikačním prostředkem. Je oficiálním jazykem v mnoha zemích světa a používá se v mezinárodních institucích, obchodu a vědě. Angličtina má bohatou slovní zásobu a je známa svou flexibilitou a schopností přejímat slova z jiných jazyků. 
-
-## Kde se tak mluví
-Angličtina jako úřední jazyk, příp. jeden z úředních jazyků, figuruje samozřejmě ve Spojeném království, Spojených státech, Irsku, Kanadě, Austrálii nebo na Novém Zélandu.
-Angličtinu ale zaslechneme takřka po celém světě. Hojně v bývalých koloniích Velké Británie, méně či více hojně v zemích dalších. */}
+<div className="mt-5"/>
+#### ANGLIČTINA
 <Infos obsahInformace={obsahInformaceAnglictina} />
 <div className="mt-10"/>
 
-{/* 
-<img src="./obrazky/abeceda.png" alt="Moje fotka" className="w-1/4 float-left mr-4 rounded-lg" /> */}
-{/* <Abc /> */}
-<div className="mt-2"/>
-
-<Interests obsahZajimavosti={obsahZajimavostiAnglictina} />
-
-{/*   
-## Zajímavosti 
-### Vzdušný jazyk
-Tímto souslovím se angličtina neoznačuje proto, že by nám její vyslovování šetřilo plíce.
- -Jde o to, že i v leteckém prostoru také funguje jako lingva franka. To znamená, že jako pilot musíte zvládat v angličtině komunikovat – jinak to totiž nejde.
-
-### Méně slov k domluvě než peněz za dva obědy
-Abyste se dokázali alespoň základně domluvit, stačí údajně znát jen 150–300 slov. To je méně slov než peněz za dva obědy. A to se vyplatí! Nebo ne?
- 
-### Česká slova v angličtině
-V našem jazyce máme mnoho anglicismů, tedy slov, které se z angličtiny dostali sem. Funguje to ale i naopak?
-Možná se budete divit, ale ano. Sice to nejsou mraky slov (vlastně ani mráčky.. nebo jeden), ale některá existují. A která že to jsou?
-- robot: asi všem známé slovo vymyšlené panem Čapkem (a víte kterým?) pro román R.U.R.
--	pilsner: plzeňské pivo */}
-
-
-
+#### ZAJÍMAVOSTI
+<Infos obsahInformace={obsahZajimavostiAnglictina} />
 <div className="mt-20"/>
 
-
-# TIPY NA UČENÍ
+#### TIPY NA UČENÍ
 <Books obsahKnih={obsahKnihAnglictina} />
-
 <div className="mt-10"/>
-
 <Films obsahFilm={obsahFilmAnglictina} />
-
-
-
+<div className="mt-20"/>
