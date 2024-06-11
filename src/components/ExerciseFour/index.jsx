@@ -18,18 +18,20 @@ export const ExerciseFour = ({ children: correctAnswer, id }) => {
     }
   };
   return (
-    <div>
-      <iframe
-        className="mx-auto my-5 pt-10 shadow-lg rounded "
-        width="560"
-        height="315"
-        src={`https://www.youtube.com/embed/${id}`}
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
-      ></iframe>
+    <>
+      <div className="mx-auto my-5 pt-10 shadow-lg rounded">
+        <div className="aspect-ratio-16/9">
+          <iframe
+            className="w-full h-full"
+            src={`https://www.youtube.com/embed/${id}`}
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
       <label>
         <span className="sr-only">Answer</span>
         <input
@@ -38,7 +40,7 @@ export const ExerciseFour = ({ children: correctAnswer, id }) => {
           value={answer}
           onChange={evaluateAnswer}
         />
-      </label>
-    </div>
+      </label>{' '}
+    </>
   );
 };

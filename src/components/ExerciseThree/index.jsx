@@ -18,8 +18,12 @@ export const ExerciseThree = ({ children: correctAnswer, img }) => {
     }
   };
   return (
-    <div className="flex flex-col basis-1/4 items-center">
-      <img src={`/exercise/${img}`} />
+    <div className="flex flex-col basis-1/5 items-center">
+      <img
+        className="max-w-full h-auto"
+        src={`/exercise/${img}`}
+        alt="exercise"
+      />
 
       <label>
         <span className="sr-only">Answer</span>
