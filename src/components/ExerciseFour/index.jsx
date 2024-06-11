@@ -20,7 +20,7 @@ export const ExerciseFour = ({ children: correctAnswer, id }) => {
   return (
     <div>
       <iframe
-        className="mx-auto my-5 pt-10 shadow-lg rounded border-5"
+        className="mx-auto my-5 pt-10 shadow-lg rounded "
         width="560"
         height="315"
         src={`https://www.youtube.com/embed/${id}`}
