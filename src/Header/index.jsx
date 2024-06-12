@@ -5,7 +5,7 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 const MenuItem = ({ to, itemName, onClick }) => {
   return (
     <li>
-      <Link to={to} className="font-medium text-lg text-black hover:underline" onClick={onClick}>
+      <Link to={to} className="font-medium text-lg text-black hover:underline hover:bg-yellow-300 hover:rounded-lg " onClick={onClick}>
         {itemName}
       </Link>
     </li>
@@ -24,9 +24,9 @@ export const Header = () => {
   };
 
   return (
-    <header className="flex items-center justify-between bg-yellow-400 py-4 px-6">
+    <header className="relative flex items-center justify-between bg-yellow-400 py-4 px-6 transition duration-300 hover:bg-yellow-500 hover:rounded-lg">
       <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium">POJĎ se UČIT</p>
-      <div className="block lg:hidden">
+      <div className="absolute top-0 right-0 mt-2 mr-2 lg:hidden">
         <button onClick={handleToggle} className="text-black focus:outline-none">
           {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
         </button>
