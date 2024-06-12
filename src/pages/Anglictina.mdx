@@ -2,19 +2,23 @@ import {Books, obsahKnihAnglictina}  from "../components/Books"
 import {Films, obsahFilmAnglictina} from "../components/Films"
 import {Infos, obsahInformaceAnglictina, obsahZajimavostiAnglictina} from "../components/Info"
 
-<div className="mt-5"/>
-#### ANGLIČTINA
-<div className="mt-4"/>
-<Infos obsahInformace={obsahInformaceAnglictina} />
-<div className="mt-12"/>
+<div className="container mx-auto w-full max-w-5xl bg-gray-50 shadow-2xl px-4 sm:px-6 md:px-10 overflow-x-auto mt-5 pl-10">
+  <div className="mt-5" />
+  #### ANGLIČTINA
+  <div className="mt-4" />
+  <Infos obsahInformace={obsahInformaceAnglictina} />
+  <div className="mt-12" />
 
-#### ZAJÍMAVOSTI
-<Infos obsahInformace={obsahZajimavostiAnglictina} />
-<div className="mt-20"/>
+  #### ZAJÍMAVOSTI
+  <Infos obsahInformace={obsahZajimavostiAnglictina} />
+  <div className="mt-10" />
 
-#### TIPY NA UČENÍ
-<Books obsahKnih={obsahKnihAnglictina} />
-<div className="mt-10"/>
-<Films obsahFilm={obsahFilmAnglictina} />
-<div className="w-full sm:w-1/2 px-2 rounded-lg overflow-hidden bg-white shadow-lg mt-10"/>
-<div className="mt-10"/>
+  #### TIPY NA PROCVIČOVÁNÍ
+    <div className="mt-5" />
+  <Books obsahKnih={obsahKnihAnglictina} />
+  <div className="mt-10" />
+  <Films obsahFilm={obsahFilmAnglictina} />
+  <div className="w-full sm:w-1/2 px-2 rounded-lg overflow-hidden bg-white shadow-lg mt-10" />
+</div>
+<div className="mt-10" />
+

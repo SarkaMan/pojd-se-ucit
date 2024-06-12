@@ -26,8 +26,8 @@ export const obsahFilmAnglictina = [
 
 export const Films = ({ obsahFilm }) => {
   return (
-    <div className="language-container">
-      <div className="flex  gap-3">
+    <div className="px-4 sm:px-6 md:px-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 gap-4">
         {obsahFilm.map((obsah) => {
           return (
             <Film

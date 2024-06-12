@@ -27,19 +27,19 @@ const languages = [
 
 export const HomePage = () => {
   return (
-    <div className="">
+    <div className="container mx-auto w-full max-w-5xl bg-gray-50 shadow-2xl px-4 sm:px-6 md:px-10 overflow-x-auto mt-5 mb-10">
       <About components={createComponents()} />
-      <div className='flex  gap-5'>
-      {languages.map((language) => {
-        return (
-          <LanguageCard 
-            name={language.name} 
-            flag={language.flag}
-            description={language.description}
-            key={language.name}
-          />
-        );
-      })}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-5">
+        {languages.map((language) => {
+          return (
+            <LanguageCard 
+              name={language.name} 
+              flag={language.flag}
+              description={language.description}
+              key={language.name}
+            />
+          );
+        })}
       </div>
       <div className="w-full sm:w-1/2 px-2 rounded-lg overflow-hidden bg-white shadow-lg mt-10"/>
       <div className="mt-10"/>

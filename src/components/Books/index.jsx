@@ -42,23 +42,25 @@ export const obsahKnihAnglictina = [
 
 export const Books = ({ obsahKnih }) => {
   return (
-    <div className="language-container">
-      <div className="flex  gap-3">
-        {obsahKnih.map((obsah) => {
-          return (
-            <Book
-              name={obsah.name}
-              book1={obsah.book1}
-              book2={obsah.book2}
-              book3={obsah.book3}
-              book={obsah.book4}
-            />
-          );
-        })}
+      <div className="px-4 sm:px-6 md:px-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          {obsahKnih.map((obsah) => {
+            return (
+              <Book
+                name={obsah.name}
+                book1={obsah.book1}
+                book2={obsah.book2}
+                book3={obsah.book3}
+                book4={obsah.book4}
+                key={obsah.name}
+              />
+            );
+          })}
+        </div>
       </div>
-    </div>
   );
 };
+
 
 
 
