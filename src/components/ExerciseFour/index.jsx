@@ -19,18 +19,18 @@ export const ExerciseFour = ({ children: correctAnswer, id }) => {
   };
   return (
     <>
-      <div className="mx-auto my-5 pt-10 shadow-lg rounded">
-        <div className="aspect-ratio-16/9">
-          <iframe
-            className="w-full h-full"
-            src={`https://www.youtube.com/embed/${id}`}
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
-        </div>
+      <div className="flex">
+        <iframe
+          className="rounded mx-auto"
+          width="560"
+          height="380"
+          src={`https://www.youtube.com/embed/${id}`}
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
       </div>
       <label>
         <span className="sr-only">Answer</span>
@@ -44,3 +44,5 @@ export const ExerciseFour = ({ children: correctAnswer, id }) => {
     </>
   );
 };
+
+// src={`https://www.youtube.com/embed/${id}`}

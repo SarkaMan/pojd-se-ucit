@@ -35,7 +35,7 @@ export const ExerciseFive = ({ definitions }) => {
       </div>
       <div className="flex gap-4 pb-20 mt-5">
         <button
-          className="inline-block rounded border border-gray-200 bg-green-700 px-12 py-3 font-medium text-white enabled:hover:bg-transparent enabled:hover:text-green-700 focus:outline-none focus:ring text-base mx-5 my-5 disabled:bg-gray-200"
+          className="inline-block rounded border border-gray-200 bg-green-600 px-12 py-3 font-medium text-white enabled:hover:bg-transparent enabled:hover:text-green-600 focus:outline-none focus:ring text-base mx-5 my-5 disabled:bg-gray-200"
           onClick={evaluateAnswer}
         >
           Vyhodnotit

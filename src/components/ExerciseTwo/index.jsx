@@ -9,7 +9,7 @@ export const ExerciseTwo = ({ children: correctAnswer }) => {
 
     const userAnswer = event.target.value;
     setAnswer(userAnswer);
-    if (answer === '') {
+    if (userAnswer === '') {
       setAnswerValue(null);
     } else {
       const isCorrect =
@@ -26,7 +26,7 @@ export const ExerciseTwo = ({ children: correctAnswer }) => {
           type="text"
           value={answer}
           onChange={evaluateAnswer}
-          className="w-fit rounded-md border-gray-300 pe-10 shadow-sm sm:text-sm  text-gray-900 focus:border-gray-400 focus:ring-gray-400"
+          className="w-fit rounded-md border-gray-300 pe-10 shadow-sm sm:text-sm text-gray-900 focus:border-gray-400 focus:ring-gray-400"
         />
       </label>
     </div>

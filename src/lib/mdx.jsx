@@ -8,7 +8,7 @@ import { ExerciseFive } from '../components/ExerciseFive';
 
 export const createComponents = () => ({
   h1: ({ children }) => (
-    <h1 className="font-bold text-2xl text-green-700 mt-10 mx-5 mb-5">
+    <h1 className="font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-green-700 mt-5 sm:mt-8 md:mt-10 lg:mt-12 mx-4 sm:mx-5 md:mx-6 mb-4 sm:mb-5 md:mb-6 lg:mb-8 text-left leading-snug sm:leading-relaxed">
       {children}
     </h1>
   ),

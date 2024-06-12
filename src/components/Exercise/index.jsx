@@ -54,7 +54,7 @@ export const Exercise = ({ children }) => {
           Vyhodnotit
         </button>
         {showResult && (
-          <span className="font-bold text-2xl text-green-600 ml-2">
+          <span className="block sm:inline-block sm:ml-2 font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl text-green-600 mt-2 sm:mt-0">
             Správné odpovědi: {correctAnswers}/{answerCount}
           </span>
         )}

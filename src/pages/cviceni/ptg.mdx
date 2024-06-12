@@ -13,32 +13,33 @@ definitions:
 ---
 
 import { Cviceni } from '../../components/Cviceni';
-import { Task1 } from '../../components/Task1'
-import { Task2 } from '../../components/Task2'
-import { Task3 } from '../../components/Task3'
-import { Task4 } from '../../components/Task4'
-import { Task5 } from '../../components/Task5'
+import { Tasks } from '../../components/Tasks'
 import { Introduction } from '../../components/Introduction'
 
 <Introduction></Introduction>
 
-<img className="max-w-3xl w-full h-auto mx-auto rounded-md mt-10" src="/article/ptg.jpg" alt="carta"/>
+<article className="shadow-md relative bg-white mx-auto md:w-10/12 lg:w-10/12 px-5 py-8 md:py-12 rounded-md flex flex-col items-center mt-8">
 
-<article className="shadow-md relative bg-white mx-auto w-9/12 px-5 py-8 mt-[-150px] rounded-md">
+
+<img className="max-w-full h-auto rounded-md mt-10 md:mt-0" src="/article/ptg.jpg" alt="carta"/>
+
+<div className="mt-10 md:mt-0 text-justify">
 
 # Carta das férias na Espanha
 
-E aí, pessoal, tudo bem com todos vocês? Eu estou superbem! Nossa, isso aqui é simplesmente o máximo! No momento, estamos num :term[albergue] que tem Internet :term[de graça], então aproveitei para mandar notícias.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E aí, pessoal, tudo bem com todos vocês? Eu estou superbem! Nossa, isso aqui é simplesmente o máximo! No momento, estamos num :term[albergue] que tem Internet :term[de graça], então aproveitei para mandar notícias.
 Passamos três dias em Sevilha, que é ótima, superbonita, mas preciso confessar que, mesmo sendo brasileira, sofri bastante com o calor seco de lá. Gente, em pleno final de tarde, às 19h, fazia algo em torno de 41 graus! De qualquer forma, pudemos aproveitar, passear bastante e até :term[pegar uma cor].
 
-Hoje o dia foi bem comprido: :term[acordamos]{expression=acordar} super cedo e fomos passar o dia em Ronda, uma :term[cidade] minúscula, muito fofa – vocês não imaginam a vista que se tem de lá! Foi ótimo, um dia delicioso, mas bastante cansativo, pois andamos como loucas varridas o dia inteiro e :term[estamos mortas]{expression="estar morto"}!
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hoje o dia foi bem comprido: :term[acordamos]{expression=acordar} super cedo e fomos passar o dia em Ronda, uma :term[cidade] minúscula, muito fofa – vocês não imaginam a vista que se tem de lá! Foi ótimo, um dia delicioso, mas bastante cansativo, pois andamos como loucas varridas o dia inteiro e :term[estamos mortas]{expression="estar morto"}!
 
-Bom, acabamos de chegar (há poucas horas) em Granada, uma cidade bem quente. De Granada ainda não tivemos tempo de ver muito, mas parece ser uma cidade muito bonita, com fortíssima influência moura, como o Alhambra, que vamos conhecer amanhã. Hoje já :term[demos umas voltas]{expression="dar uma volta"} para :term[conferir] um pouco da cidade, e vamos sair logo mais para tomar :term[aperitivos]{expression=aperitivo} e beliscar umas coisinhas de comer, as tapas.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bom, acabamos de chegar (há poucas horas) em Granada, uma cidade bem quente. De Granada ainda não tivemos tempo de ver muito, mas parece ser uma cidade muito bonita, com fortíssima influência moura, como o Alhambra, que vamos conhecer amanhã. Hoje já :term[demos umas voltas]{expression="dar uma volta"} para :term[conferir] um pouco da cidade, e vamos sair logo mais para tomar :term[aperitivos]{expression=aperitivo} e beliscar umas coisinhas de comer, as tapas.
 
-Estamos nos virando superbem com nosso portunhol e comemos muito bem. Também temos conhecido bastante gente – fora o tanto de brasileiros com quem já :term[cruzamos]{expression=cruzar} pelo caminho. Bom, beijocas a todos!
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Estamos nos virando superbem com nosso portunhol e comemos muito bem. Também temos conhecido bastante gente – fora o tanto de brasileiros com quem já :term[cruzamos]{expression=cruzar} pelo caminho. Bom, beijocas a todos!
+</div>
 </article>
 
-<Task1></Task1>
+
+<Tasks text="Spáruj výrazy podle nejlepšího vědomí a svědomí."></Tasks>
 
 :::exercise
 
@@ -55,7 +56,7 @@ Estamos nos virando superbem com nosso portunhol e comemos muito bem. Também te
 
 :::
 
-<Task2></Task2>
+<Tasks text="Věta světa. Doplň správné slovo. Bacha! Gramatická správnost je také nutná."></Tasks>
 
 :::exercise
 
@@ -72,7 +73,7 @@ Estamos nos virando superbem com nosso portunhol e comemos muito bem. Também te
 
 :::
 
-<Task3></Task3>
+<Tasks text="Trocha relaxace pro oči. Napiš pod obrázek, který výraz je zde znázorněn. Schválně, jestli to vidíme stejně."></Tasks>
 
 :::exercise
 
@@ -85,15 +86,15 @@ Estamos nos virando superbem com nosso portunhol e comemos muito bem. Também te
 
 :::
 
-<Task4></Task4>
+<Tasks text="Teď ty zrelaxované oči zavři a pononoř se do hudby. Soustřeď se na každé slovo, ať zachytíš to naše. Opět vepiš do rámečku. (Note: Až zvládneme i další funkcionality v JavaScriptu, tak nebudeš muset pořád vypisovat odpovědi do textového pole, I promise!)."></Tasks>
 
 :::exercise
 
-::youtube[cidade]{id="Wu4oZbmK7RpcJ1Sv"}
+::youtube[cidade]{id="hTtpEZnFt2c"}
 
 :::
 
-<Task5></Task5>
+<Tasks text="No super, jsi na konci! A teď výzva. Nachystala jsem si pro tebe větu, která v sobě obsahuje všechny dnes pokořené výrazy. Že ta moje věta nedává moc smysl? Vymyslíš vlastní? Ano? Ne? Tak aspoň do posledního textového pole napiš všech 10 výrazů a nech se překvapit, jak to naše webová aplikace vyhodnotí. Sama jsem zvědavá, co jsme tam naprogramovaly."></Tasks>
 
 "Fui à cidade e encontrei um albergue de graça. Saí para pegar uma cor e acordei me sentindo morto. Dei uma volta, conferi as barracas, comprei aperitivos e cruzei com um amigo. Foi ótimo!"
 
