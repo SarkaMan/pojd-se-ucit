@@ -7,9 +7,8 @@ export const App = () => (
   <>
     <Header />
     <main className="container mx-auto w-full max-w-5xl bg-gray-50 shadow-2xl">
-        <Outlet />
+      <Outlet />
     </main>
     <Footer />
   </>
 );
-
