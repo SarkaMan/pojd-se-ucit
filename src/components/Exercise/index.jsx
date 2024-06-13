@@ -39,7 +39,6 @@ export const Exercise = ({ children }) => {
     }
   });
 
-  console.log(disabled);
   return (
     <>
       <AnswersContext.Provider value={setAnswer}>
@@ -47,14 +46,14 @@ export const Exercise = ({ children }) => {
       </AnswersContext.Provider>
       <div>
         <button
-          className="inline-block rounded border border-gray-200 bg-green-600 px-12 py-3 font-medium text-white enabled:hover:bg-transparent enabled:hover:text-green-600 focus:outline-none focus:ring text-base mx-5 my-5 disabled:bg-gray-200"
+          className="inline-block rounded border border-gray-200 bg-green-600 px-12 py-3 font-medium text-white enabled:hover:bg-transparent enabled:hover:text-green-600 focus:outline-none focus:ring text-base mx-5 my-5 disabled:bg-gray-200 ml-10"
           disabled={disabled}
           onClick={handleClick}
         >
           Vyhodnotit
         </button>
         {showResult && (
-          <span className="block sm:inline-block sm:ml-2 font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl text-green-600 mt-2 sm:mt-0">
+          <span className="block sm:inline-block sm:ml-2 font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl text-green-600 mt-2 sm:mt-0 ml-10">
             Správné odpovědi: {correctAnswers}/{answerCount}
           </span>
         )}

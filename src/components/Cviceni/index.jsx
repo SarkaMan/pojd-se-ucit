@@ -1,7 +1,3 @@
 export const Cviceni = ({ children }) => {
-  return (
-    <div className="flex flex-wrap gap-2 items-end mt-5 justify-center">
-      {children}
-    </div>
-  );
+  return <div className="mt-5 ml-10 mr-10 justify-center">{children}</div>;
 };

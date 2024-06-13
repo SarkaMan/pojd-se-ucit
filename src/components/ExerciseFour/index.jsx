@@ -19,7 +19,7 @@ export const ExerciseFour = ({ children: correctAnswer, id }) => {
   };
   return (
     <>
-      <div className="flex">
+      <div className="flex ml-10 mr-10">
         <iframe
           className="rounded mx-auto"
           width="560"
@@ -35,7 +35,7 @@ export const ExerciseFour = ({ children: correctAnswer, id }) => {
       <label>
         <span className="sr-only">Answer</span>
         <input
-          className="mt-10 w-fit rounded-md border-gray-300 pe-10 shadow-sm sm:text-sm text-gray-900 focus:border-gray-400 focus:ring-gray-400"
+          className="mt-10 w-fit rounded-md border-gray-300 pe-10 shadow-sm sm:text-sm text-gray-900 focus:border-gray-400 focus:ring-gray-400 ml-10 mr-10"
           type="text"
           value={answer}
           onChange={evaluateAnswer}

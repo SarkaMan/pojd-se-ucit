@@ -10,14 +10,14 @@ export const Introduction = () => {
       </div>
       <div className="pt-5 px-5 text-xl md:text-2xl md:px-20 text-left md:text-justify">
         <p>
-          Některé už jistě znáš a ty co neznáš, zopakuješ tolikrát, že už je
+          Některé už jistě znáš a ty, co neznáš, zopakuješ tolikrát, že už je
           budeš znát taky.{' '}
           <span className="font-bold">Chceš vědět, co daný</span>
           <span className="text-green-600 font-bold"> výraz znamená?</span>{' '}
           <span className="font-bold">Stačí na něj</span>
           <span className="text-green-600 font-bold"> kliknout</span>. Že znáš i
-          další význam uvedeného výrazu? Tím lépe pro tebe! Pro účel našich
-          cvičení však bude stačit uvedené vysvětlení.
+          další význam našeho výrazu? Tím lépe pro tebe! V následujících
+          cvičeních však postačí porozumět definici z vyskakovací bubliny.
         </p>
         <p className="mt-4">
           Konec řečí. Protáhni prsty, přepni mozek na příslušnou jazykovou
