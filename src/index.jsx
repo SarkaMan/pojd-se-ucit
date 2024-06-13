@@ -8,8 +8,7 @@ import Portugalstina from './pages/Portugalstina.mdx';
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { App } from './App';
-import { Header } from './Header';
-import { Footer } from './Footer';
+
 import English, {
   frontmatter as englishFrontmatter,
 } from './pages/cviceni/eng.mdx';
@@ -20,6 +19,7 @@ import Portuguese, {
   frontmatter as portugueseFrontmatter,
 } from './pages/cviceni/ptg.mdx';
 import { createExerciseComponents, createComponents } from './lib/mdx';
+
 
 const router = createBrowserRouter([
   {
@@ -71,4 +71,3 @@ createRoot(document.querySelector('#app')).render(
 );
 
 
-// Anglictina components={createComponents()}

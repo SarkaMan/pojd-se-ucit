@@ -186,7 +186,7 @@ export const obsahKnihPortugalstina = [
     book1: 'Minha Razão de Viver od Samuel Wainer',
     book2: 'Correr: O Exercício, a Cidade e o Desafio da Vida od Drauzio Varella',
     book3: 'O Evangelho Segundo Jesus Cristo od José Saramago',
-    book4: 'TODO',
+    book4: 'Os Sertões" od Euclides da Cunha',
   },
 ];
 
