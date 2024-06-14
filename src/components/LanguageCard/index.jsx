@@ -27,7 +27,7 @@ export const LanguageCard = ({ name, flag, description }) => {
       className="p-5 w-full min-w-[200px] rounded-lg overflow-hidden bg-white shadow-xl cursor-pointer transition-transform transform hover:scale-105"
       onClick={handleClick}
     >
-      <h1 className="text-xl font-medium mb-2">{name}</h1>
+      <h1 className="text-lg text-center font-medium mb-2">{name}</h1>
       <img className="vlajky" src={flag} alt={`${name} flag`} />
       <p>{description}</p>
     </div>
