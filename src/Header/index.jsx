@@ -1,13 +1,19 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 const MenuItem = ({ to, itemName, onClick }) => {
   return (
     <li>
-      <Link to={to} className="font-medium text-lg text-black hover:underline hover:bg-yellow-300 hover:rounded-lg " onClick={onClick}>
+      <NavLink 
+        to={to} 
+        className={({ isActive }) => 
+          `font-medium text-lg text-black hover:underline hover:bg-yellow-300 hover:rounded-lg hover:scale-105 hover:shadow-lg transition-transform px-4 py-2 shadow-lg ${isActive ? 'underline bg-yellow-300 rounded-lg' : ''}`
+        } 
+        onClick={onClick}
+      >
         {itemName}
-      </Link>
+      </NavLink>
     </li>
   );
 };
@@ -27,7 +33,7 @@ export const Header = () => {
     <header className="relative flex items-center justify-between bg-yellow-400 py-4 px-6 transition duration-300 hover:bg-yellow-500 hover:rounded-lg">
       <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium">POJĎ se UČIT</p>
       <div className="absolute top-0 right-0 mt-2 mr-2 lg:hidden">
-        <button onClick={handleToggle} className="text-black focus:outline-none ml-2 mt-3 ">
+        <button onClick={handleToggle} className="text-black focus:outline-none ml-2 mt-3">
           {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
         </button>
       </div>
