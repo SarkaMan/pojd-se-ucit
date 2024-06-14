@@ -17,7 +17,7 @@ export const LanguageCard = ({ name, flag, description }) => {
         path = 'portugalstina';
         break;
       default:
-        path = '/'; // Default path if the language is not recognized
+        path = '/'; 
     }
     navigate(`/${path}`);
   };

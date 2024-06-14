@@ -12,11 +12,11 @@ export const obsahInformaceAnglictina = [
 export const obsahZajimavostiAnglictina = [
   {
     name: 'Vzdušný jazyk',
-    text: 'Tímto souslovím se angličtina neoznačuje proto, že by nám její vyslovování šetřilo plíce.-Jde o to, že i v leteckém prostoru také funguje jako lingva franka. To znamená, že jako pilot musíte zvládat v angličtině komunikovat – jinak to totiž nejde.',
+    text: 'Tímto souslovím se angličtina neoznačuje proto, že by nám její vyslovování šetřilo plíce. Jde o to, že i v leteckém prostoru také funguje jako lingva franka. To znamená, že jako pilot musíte zvládat v angličtině komunikovat – jinak to totiž nejde.',
   },
   {
     name: 'Méně slov k domluvě než peněz za dva obědy',
-    text: 'Tímto souslovím se angličtina neoznačuje proto, že by nám její vyslovování šetřilo plíce.-Jde o to, že i v leteckém prostoru také funguje jako lingva franka. To znamená, že jako pilot musíte zvládat v angličtině komunikovat – jinak to totiž nejde.',
+    text: 'Abyste se dokázali alespoň základně domluvit, stačí údajně znát jen 150–300 slov. To je méně slov než peněz za dva obědy. A to se vyplatí! Nebo ne?',
   },
   {
     name: 'Slovo run může mít až 600 různých významů',
@@ -31,7 +31,7 @@ export const obsahInformaceSpanelstina = [
   },
   {
     name: 'Kde se tak mluví',
-    text: 'Samotný název odkazuje ke Španělsku. V souvislosti s tím si ale musíme říct, že se španělština není úředním jazykem pouze ve Španělsku a také není jediným úředním jazykem v této evropské zemi. Úředními jazyky ve Španělsku jsou: španělština, baskičtina, galicijština,katalánština.',
+    text: 'Samotný název odkazuje ke Španělsku. V souvislosti s tím si ale musíme říct, že španělština není úředním jazykem pouze ve Španělsku a také není jediným úředním jazykem v této evropské zemi. Úředními jazyky ve Španělsku jsou: španělština, baskičtina, galicijština a katalánština.',
   },
 ];
 
@@ -41,7 +41,7 @@ export const obsahZajimavostiSpanelstina = [
     text: 'Jak je zvykem u románských jazyků, i ve španělštině se rozlišuje pouze rod mužský a rod ženský. Střední rod, na který jsme zvyklí u ostatních jazyků, zde zkrátka nenalezneme.',
   },
   {
-    name: ' Nejrychlejší jazyk světa',
+    name: 'Nejrychlejší jazyk světa',
     text: 'O španělštině se dále říká, že je nejrychlejším jazykem světa. Ne, že by tedy byl jazykem sprinterů, jde zkrátka o rychlost, jakou její mluvčí mluví. Když si člověk představí španělsky se hádající dvojku… tak to vlastně dává smysl. Nebo ne?',
   },
   {
@@ -50,15 +50,14 @@ export const obsahZajimavostiSpanelstina = [
   },
 ];
 
-
 export const obsahInformacePortugalstina = [
   {
     name: 'Informace o jazyku',
-    text: 'Portugalština je šestá nejrozšířenější řeč na světě a má přes 250 milionů mluvčích. Jedná se o jeden z nejtěžších románských jazyků, z latiny pochází zhruba 90 % portugalské slovní zásoby. Úředním jazykem není jen v Portugalsku, ale i v Brazílii, Mosambiku, Angole a dokonce i na Kapverdách, kam se v poslední době vydává stále více Čechů. V Portugalsku uslyšíte hezkou zpívanou řeč – portugalštinu. Podle čeho ji poznáte i ve světě? Často používají š, až se tomu ostatní státy smějí a parodují jejich mluvu. Je to jazyk románský a vzdáleně podobný španělštině. Pokud tedy pojedete do Portugalska a již umíte španělsky nebo i italsky, domluvíte se tady poměrně bez problému.',
+    text: 'Portugalština spadá do západoiberské větve románské jazykové skupiny a téměř 250 milionů mluvčích ji činí šestou nejrozšířenější řečí na světě. Jedná se o jeden z nejtěžších románských jazyků, z latiny pochází zhruba 90 % portugalské slovní zásoby. V Portugalsku uslyšíte hezkou zpívanou řeč – portugalštinu. Podle čeho ji poznáte i ve světě? Často používají š, až se tomu ostatní státy smějí a parodují jejich mluvu. Je to jazyk románský a vzdáleně podobný španělštině. Pokud tedy pojedete do Portugalska a již umíte španělsky nebo i italsky, domluvíte se tady poměrně bez problému.',
   },
   {
     name: 'Kde se tak mluví',
-    text: 'V Portugalsku se mluví jak jinak než portugalsky. Portugalština spadá do západoiberské větve románské jazykové skupiny a téměř 250 milionů mluvčích ji činí šestou nejrozšířenější řečí na světě. Jako jediný úřední jazyk je používána také v Brazílii, Angole, Mosambiku, na Kapverdách a na ostrovech Saõ Tomé a Príncipes. Přežívá ale i v některých dalších zemích subsaharské Afriky a jihovýchodní Asie.',
+    text: 'Portugalština se používá pochopitelně v Portugalsku. Jako jediný úřední jazyk je však používána také v Brazílii, Angole, Mosambiku, na Kapverdách a na ostrovech Saõ Tomé a Príncipes. Přežívá ale i v některých dalších zemích subsaharské Afriky a jihovýchodní Asie.',
   },
 ];
 
@@ -69,22 +68,20 @@ export const obsahZajimavostiPortugalstina = [
   },
   {
     name: 'Velmi formální jazyk',
-    text: 'Jedním z málo známých faktů je to, že portugalština (obzvlášť ta evropská) je extrémně formální při oslovování dalších osob. Většina evropských jazyků zná dva druhy oslovení – formu tykání a vykání. Oproti tomu portugalština obsahuje více forem nejen vykání v závislosti na tom, kdo s kým jedná a z jaké společenské vrstvy pochází. Velice zřetelné je toto při obchodním jednání nebo v rámci firmy, ale podobné příklady můžeme najít i v rámci rodiny, kdy matky z vyšších tříd budou volat na své dítě jinak než matky z nižších vrstev. ',
+    text: 'Jedním z málo známých faktů je to, že portugalština (obzvlášť ta evropská) je extrémně formální při oslovování dalších osob. Většina evropských jazyků zná dva druhy oslovení – formu tykání a vykání. Oproti tomu portugalština obsahuje více forem nejen vykání v závislosti na tom, kdo s kým jedná a z jaké společenské vrstvy pochází. Velice zřetelné je toto při obchodním jednání nebo v rámci firmy, ale podobné příklady můžeme najít i v rámci rodiny, kdy matky z vyšších tříd budou volat na své dítě jinak než matky z nižších vrstev.',
   },
   {
     name: 'Gramatika',
-    text: 'Portugalská gramatika byla kodifikována v 16. století, kdy už existovala bohatá literatura, cestopisy počínaje a dramatickou tvorbou konče. Vlivem renesančního přílivu umělců se jazyk dále obohatil o některé výrazy z italštiny a francouzštiny. Dnes díky kosmopolitní mládeži a neexistenci dabingu přijali Portugalci za svou také řadu anglických slovíček.',
+    text: 'Portugalská gramatika byla kodifikována v 16. století, kdy už existovala bohatá literatura, cestopisy počínaje a dramatickou tvorbou konče. Vlivem renesančního přílivu umělců se jazyk dále obohatil o některé výrazy z italštiny a francouzštiny. Dnes díky kosmopolitní mládeži a neexistenci dabingu přijali Portugalci za své také řadu anglických slovíček.',
   },
 ];
 
-
-const Info = ({ name, text,  }) => {
+const Info = ({ name, text }) => {
   return (
     <div className="w-full px-2">
       <h1 className="text-xl font-medium mb-2 mt-2"> {name} </h1>
       <p> {text} </p>
-      </div>
-    
+    </div>
   );
 };
 
@@ -93,16 +90,9 @@ export const Infos = ({ obsahInformace }) => {
     <div className="language-container">
       <div className="flex flex-col gap-4">
         {obsahInformace.map((obsah) => {
-          return (
-            <Info
-              name={obsah.name}
-              text={obsah.text}
-            />
-          );
+          return <Info name={obsah.name} text={obsah.text} />;
         })}
       </div>
     </div>
   );
 };
-
-
