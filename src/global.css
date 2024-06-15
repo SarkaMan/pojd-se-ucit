@@ -21,7 +21,7 @@
   }
 
   ol {
-    @apply flex flex-col gap-y-4;
+    @apply flex flex-col gap-y-4 font-base;
   }
 
   body {

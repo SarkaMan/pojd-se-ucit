@@ -15,7 +15,7 @@ export const ExerciseFive = ({ definitions }) => {
         answer.toLowerCase().includes(definition.toLowerCase()),
       );
       if (wordList.length <= 5) {
-        setAlert('Už jsi měl i lepší chvíle.');
+        setAlert('To by šlo, ale už jsi měl i lepší chvíle.');
       } else {
         setAlert('Tak to jsme na tom zhruba stejně.');
       }
