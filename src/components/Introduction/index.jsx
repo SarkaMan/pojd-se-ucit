@@ -1,7 +1,7 @@
 export const Introduction = () => {
   return (
     <>
-      <div className="pt-20 px-5 md:pt-40 md:px-20 text-left md:text-justify">
+      <div className="pt-20 px-5 md:pt-20 md:px-20 text-left md:text-justify">
         <strong className="font-regular text-2xl md:text-4xl">
           Jdeme na to! Je tu <span className="text-green-600">rychlá akce</span>{' '}
           - krátký článek, krátká cvičení,{' '}

@@ -1,15 +1,9 @@
-import { useState } from 'react';
-
-export const ShowExpression = ({ expression }) => {
-  const [closeAlert, setCloseAlert] = useState(false);
-
-  const handleClick = () => {
-    setCloseAlert(true);
-  };
-
-  if (closeAlert) return null;
+export const ShowExpression = ({ expression, onClose }) => {
   return (
-    <div className="fixed inset-0 flex items-center justify-center z-50">
+    <div
+      onClick={(e) => e.stopPropagation()}
+      className="fixed inset-0 flex items-center justify-center z-50"
+    >
       <div
         role="alert"
         className="bg-yellow-50 max-w-md w-full mx-4 md:mx-0 rounded-xl border border-gray-600 p-6 shadow-lg"
@@ -21,8 +15,8 @@ export const ShowExpression = ({ expression }) => {
             </strong>
           </div>
           <button
-            onClick={handleClick}
             className="text-gray-500 transition hover:text-gray-600"
+            onClick={onClose}
           >
             <span className="sr-only">Dismiss popup</span>
             <svg
