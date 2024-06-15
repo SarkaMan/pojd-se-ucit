@@ -13,7 +13,7 @@ const MenuItem = ({ to, itemName, onClick }) => {
       <NavLink 
         to={to} 
         exact  
-        className={`font-medium text-lg text-black hover:underline hover:bg-yellow-300 hover:rounded-lg hover:scale-105 hover:shadow-lg transition-transform px-4 py-2 shadow-lg ${isActive ? 'underline bg-yellow-300 rounded-lg shadow-lg' : ''}`}
+        className={`font-medium text-lg text-black hover:underline hover:bg-yellow-300 hover:rounded-lg hover:scale-105 hover:shadow-lg transition-transform px-4 py-2 shadow-lg ${isActive ? 'underline bg-yellow-100 rounded-lg shadow-lg' : ''}`}
         onClick={onClick}
       >
         {itemName}

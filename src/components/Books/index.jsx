@@ -1,8 +1,8 @@
 import { LearningType } from "../LearningType";
 
-const Book = ({ name, book1, book2, book3, book4 }) => {
+const Book = ({ name, books }) => {
   return (
-    <LearningType name={name} item1={book1} item2={book2} item3={book3} item4={book4} />
+    <LearningType name={name} items={books} />
   );
 };
 
@@ -46,10 +46,7 @@ export const Books = ({ booksList }) => {
             return (
               <Book
                 name={item.name}
-                book1={item.book1}
-                book2={item.book2}
-                book3={item.book3}
-                book4={item.book4}
+                books={[item.book1, item.book2, item.book3, item.book4]}
                 key={item.name}
               />
             );

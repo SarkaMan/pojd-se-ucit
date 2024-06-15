@@ -1,8 +1,8 @@
 import { LearningType } from "../LearningType";
 
-const Film = ({ name, film1, film2, film3, film4 }) => {
+const Film = ({ name, films }) => {
   return (
-    <LearningType name={name} item1={film1} item2={film2} item3={film3} item4={film4} />
+    <LearningType name={name} items={films} />
   );
 };
 
@@ -32,10 +32,8 @@ export const Films = ({ filmsList }) => {
           return (
             <Film
               name={item.name}
-              film1={item.film1}
-              film2={item.film2}
-              film3={item.film3}
-              film4={item.film4}
+              films={[item.film1, item.film2, item.film3, item.film4]}
+              key={item.name}
             />
           );
         })}
