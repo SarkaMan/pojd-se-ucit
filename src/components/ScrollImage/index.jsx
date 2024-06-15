@@ -5,8 +5,8 @@ export const ScrollImage = ({ imageUrl }) => {
 
   const handleScroll = () => {
     const scrollY = window.scrollY;
-    const fadeStart = 100; // Začněte mizet po 50px skrolování
-    const fadeEnd = 300; // Úplně zmizí po 300px skrolování
+    const fadeStart = 100; 
+    const fadeEnd = 300; 
 
     if (scrollY < fadeStart) {
       setOpacity(1);

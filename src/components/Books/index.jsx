@@ -7,9 +7,7 @@ const Book = ({ name, book1, book2, book3, book4 }) => {
 };
 
 
-
-
-export const obsahKnihAnglictina = [
+export const englishBooksList = [
   {
     name: 'Klasická literartura',
     book1: '- Pride and Prejudice od Jane Austen',
@@ -40,19 +38,19 @@ export const obsahKnihAnglictina = [
   },
 ];
 
-export const Books = ({ obsahKnih }) => {
+export const Books = ({ booksList }) => {
   return (
       <div className="px-4 sm:px-6 md:px-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          {obsahKnih.map((obsah) => {
+          {booksList.map((item) => {
             return (
               <Book
-                name={obsah.name}
-                book1={obsah.book1}
-                book2={obsah.book2}
-                book3={obsah.book3}
-                book4={obsah.book4}
-                key={obsah.name}
+                name={item.name}
+                book1={item.book1}
+                book2={item.book2}
+                book3={item.book3}
+                book4={item.book4}
+                key={item.name}
               />
             );
           })}
@@ -61,30 +59,8 @@ export const Books = ({ obsahKnih }) => {
   );
 };
 
-
-
-
-
 // SPANELSTINA
-const BookSj = ({ name, book1, book2, book3, book4 }) => {
-  return (
-    <div className="w-full sm:w-1/2 px-2 rounded-lg overflow-hidden bg-white shadow-lg">
-    <div className="p-4">
-      <h1 className="text-xl font-medium mb-2"> {name} </h1>
-      <p> {book1} </p>
-      <p> {book2} </p>
-      <p> {book3} </p>
-      <p> {book4} </p>
-      </div>
-      </div>
-    
-  );
-};
-
-
-
-
-export const obsahKnihSpanelstina = [
+export const spanishBooksList = [
   {
     name: 'Klasická literartura',
     book1: '- Don Quijote de la Mancha od Miguel de Cervantes',
@@ -115,51 +91,8 @@ export const obsahKnihSpanelstina = [
   },
 ];
 
-export const BooksSj = ({ obsahKnihSj }) => {
-  return (
-    <div className="language-container">
-      <div className="flex  gap-3">
-        {obsahKnihSj.map((obsah) => {
-          return (
-            <BookSj
-              name={obsah.name}
-              book1={obsah.book1}
-              book2={obsah.book2}
-              book3={obsah.book3}
-              book={obsah.book4}
-            />
-          );
-        })}
-      </div>
-    </div>
-  );
-};
-
-
-
-
-
 // PORTUGALSTINA
-
-const BookPtg = ({ name, book1, book2, book3, book4 }) => {
-  return (
-    <div className="w-full sm:w-1/2 px-2 rounded-lg overflow-hidden bg-white shadow-lg">
-    <div className="p-4">
-      <h1 className="text-xl font-medium mb-2"> {name} </h1>
-      <p> {book1} </p>
-      <p> {book2} </p>
-      <p> {book3} </p>
-      <p> {book4} </p>
-      </div>
-      </div>
-    
-  );
-};
-
-
-
-
-export const obsahKnihPortugalstina = [
+export const portugueseBooksList = [
   {
     name: 'Klasická literartura',
     book1: '- Os Lusíadas od Luís de Camões',
@@ -183,29 +116,11 @@ export const obsahKnihPortugalstina = [
   },
   {
     name: 'Literatura faktu a autobiografie',
-    book1: 'Minha Razão de Viver od Samuel Wainer',
-    book2: 'Correr: O Exercício, a Cidade e o Desafio da Vida od Drauzio Varella',
-    book3: 'O Evangelho Segundo Jesus Cristo od José Saramago',
-    book4: 'Os Sertões" od Euclides da Cunha',
+    book1: ' - Minha Razão de Viver od Samuel Wainer',
+    book2: ' - Correr: O Exercício, a Cidade e o Desafio da Vida od Drauzio Varella',
+    book3: ' - O Evangelho Segundo Jesus Cristo od José Saramago',
+    book4: ' - Os Sertões" od Euclides da Cunha',
   },
 ];
 
-export const BooksPtg = ({ obsahKnih }) => {
-  return (
-    <div className="language-container">
-      <div className="flex  gap-3">
-        {obsahKnih.map((obsah) => {
-          return (
-            <Book
-              name={obsah.name}
-              book1={obsah.book1}
-              book2={obsah.book2}
-              book3={obsah.book3}
-              book={obsah.book4}
-            />
-          );
-        })}
-      </div>
-    </div>
-  );
-};
+

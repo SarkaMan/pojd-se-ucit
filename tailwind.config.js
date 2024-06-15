@@ -3,8 +3,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        heading: 'Embed code, sans-serif',
-        base: 'Embed code, sans-serif',
+        heading: 'Urbanist, sans-serif',
+        base: 'Urbanist, sans-serif',
       },
     },
   },

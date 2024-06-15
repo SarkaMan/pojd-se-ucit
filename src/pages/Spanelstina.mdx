@@ -1,24 +1,24 @@
-import {Books, obsahKnihSpanelstina}  from "../components/Books"
-import {Films, obsahFilmSpanelstina} from "../components/Films"
-import {Infos, obsahInformaceSpanelstina, obsahZajimavostiSpanelstina} from "../components/Info"
+import {Books, spanishBooksList}  from "../components/Books"
+import {Films, spanishFilmsList} from "../components/Films"
+import {Infos, spanishInfoList, spanishPointsOfInterest} from "../components/Info"
 import {ScrollImage} from "../components/ScrollImage"
 
 <div className="container mx-auto w-full max-w-5xl bg-gray-50 shadow-2xl px-4 sm:px-6 md:px-10 overflow-x-auto mt-5 pl-10">
-<ScrollImage imageUrl="obrazky/Šj_banner.png" />
+<ScrollImage imageUrl="obrazky/sj_banner.png" />
 #### ŠPANĚLŠTINA
 <div className="mt-4"/>
-<Infos obsahInformace={obsahInformaceSpanelstina} />
+<Infos infoList={spanishInfoList} />
 <div className="mt-12"/>
 
 #### ZAJÍMAVOSTI
-<Infos obsahInformace={obsahZajimavostiSpanelstina} />
+<Infos infoList={spanishPointsOfInterest} />
 <div className="mt-10"/>
 
 #### TIPY NA PROCVIČOVÁNÍ
 <div className="mt-5"/>
-<Books obsahKnih={obsahKnihSpanelstina} />
+<Books booksList={spanishBooksList} />
 <div className="mt-10"/>
-<Films obsahFilm={obsahFilmSpanelstina} />
+<Films filmsList={spanishFilmsList} />
 <div className="w-full sm:w-1/2 px-2 rounded-lg overflow-hidden bg-white shadow-lg mt-10"/>
 </div>
 <div className="mt-10"/>

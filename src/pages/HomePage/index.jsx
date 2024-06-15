@@ -6,18 +6,18 @@ import { createComponents } from '../../lib/mdx';
 const languages = [
   {
     name: 'Angličtina',
-    flag: 'obrazky/Aj.png',
+    flag: 'obrazky/aj.png',
     description:
       'Angličtina je považována za třetí nejšťastnější jazyk na světě.',
   },
   {
     name: 'Španělština',
-    flag: 'obrazky/Sj.png',
+    flag: 'obrazky/sj.png',
     description: 'Španělština je druhý nejpoužívanější jazyk.',
   },
   {
     name: 'Portugalština',
-    flag: 'obrazky/Ptg.png',
+    flag: 'obrazky/ptg.png',
     description:
       'Portugalština je jediným oficiálním jazykem v šesti různých zemích na třech kontinentech.',
   },
