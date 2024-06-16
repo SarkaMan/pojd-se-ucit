@@ -9,34 +9,123 @@ const Book = ({ name, books }) => {
 
 export const englishBooksList = [
   {
-    name: 'Klasická literartura',
-    book1: '- Pride and Prejudice od Jane Austen',
-    book2: '- 1984 od George Orwell',
-    book3: '- The Great Gatsby od F. Scott Fitzgerald',
-    book4: '- To Kill a Mockingbird od Harper Lee',
+    name: 'Klasická literatura',
+    books: [
+      { name: 'Pride and Prejudice', author: 'Jane Austen' },
+      { name: '1984', author: 'George Orwell' },
+      { name: 'The Great Gatsby', author: 'F. Scott Fitzgerald' },
+      { name: 'To Kill a Mockingbird', author: 'Harper Lee' }
+    ]
   },
   {
     name: 'Fantasy a sci-fi',
-    book1: '- The Lord of the Rings od J.R.R. Tolkien',
-    book2: '- Harry Potter série od J.K. Rowling',
-    book3: '- Dune od Frank Herbert',
-    book4: "- Ender's Game od Orson Scott Card",
+    books: [
+      { name: 'The Lord of the Rings', author: 'J.R.R. Tolkien' },
+      { name: 'Harry Potter série', author: 'J.K. Rowling' },
+      { name: 'Dune', author: 'Frank Herbert' },
+      { name: "Ender's Game", author: 'Orson Scott Card' }
+    ]
   },
   {
     name: 'Detektivky a thrillery',
-    book1: '- The Da Vinci Code od Dan Brown',
-    book2: '- Sherlock Holmes série od Arthur Conan Doyle',
-    book3: '- The Silent Patient od Alex Michaelides',
-    book4: '- The Girl with the Dragon Tattoo od Stieg Larsson',
+    books: [
+      { name: 'The Da Vinci Code', author: 'Dan Brown' },
+      { name: 'Sherlock Holmes série', author: 'Arthur Conan Doyle' },
+      { name: 'The Silent Patient', author: 'Alex Michaelides' },
+      { name: 'The Girl with the Dragon Tattoo', author: 'Stieg Larsson' }
+    ]
   },
   {
     name: 'Literatura faktu a autobiografie',
-    book1: '- Steve Jobs od Walter Isaacson',
-    book2: '- Educated od Tara Westover',
-    book3: '- Becoming od Michelle Obama',
-    book4: '- The Immortal Life of Henrietta Lacks od Rebecca Skloot',
-  },
+    books: [
+      { name: 'Steve Jobs', author: 'Walter Isaacson' },
+      { name: 'Educated', author: 'Tara Westover' },
+      { name: 'Becoming', author: 'Michelle Obama' },
+      { name: 'The Immortal Life of Henrietta Lacks', author: 'Rebecca Skloot' }
+    ]
+  }
 ];
+
+export const spanishBooksList = [
+  {
+    name: 'Klasická literatura',
+    books: [
+      { name: 'Don Quijote de la Mancha', author: 'Miguel de Cervantes' },
+      { name: 'Cien años de soledad', author: 'Gabriel García Márquez' },
+      { name: 'La casa de los espíritus', author: 'Isabel Allende' },
+      { name: 'Pedro Páramo', author: 'Juan Rulfo' }
+    ]
+  },
+  {
+    name: 'Fantasy a sci-fi',
+    books: [
+      { name: 'Memorias de Idhún: La Resistencia', author: 'Laura Gallego García' },
+      { name: 'La leyenda del Rey Errante', author: 'Laura Gallego García' },
+      { name: 'El Hobbit', author: 'J.R.R. Tolkien' },
+      { name: 'Cronopaisaje', author: 'Gregory Benford' }
+    ]
+  },
+  {
+    name: 'Detektivky a thrillery',
+    books: [
+      { name: 'El guardián invisible', author: 'Dolores Redondo' },
+      { name: 'La reina del sur', author: 'Arturo Pérez-Reverte' },
+      { name: 'El secreto de sus ojos', author: 'Eduardo Sacheri' },
+      { name: 'La trilogía del Baztán', author: 'Dolores Redondo' }
+    ]
+  },
+  {
+    name: 'Literatura faktu a autobiografie',
+    books: [
+      { name: 'Vivir para contarla', author: 'Gabriel García Márquez' },
+      { name: 'Paula', author: 'Isabel Allende' },
+      { name: 'Confieso que he vivido', author: 'Pablo Neruda' },
+      { name: 'El olvido que seremos', author: 'Héctor Abad Faciolince' }
+    ]
+  }
+];
+
+
+export const portugueseBooksList = [
+  {
+    name: 'Klasická literatura',
+    books: [
+      { name: 'Os Lusíadas', author: 'Luís de Camões' },
+      { name: 'O Primo Basílio', author: 'José Maria de Eça de Queirós' },
+      { name: 'Iracema', author: 'José de Alencar' },
+      { name: 'Memórias Póstumas de Brás Cubas', author: 'Machado de Assis' }
+    ]
+  },
+  {
+    name: 'Fantasy a sci-fi',
+    books: [
+      { name: 'A Batalha do Apocalipse: Da Queda dos Anjos ao Crepúsculo do Mundo', author: 'Eduardo Spohr' },
+      { name: 'O Alquimista', author: 'Paulo Coelho' },
+      { name: 'A Guerra dos Tronos', author: 'George R.R. Martin' },
+      { name: 'Filhos do Éden: Herdeiros de Atlântida', author: 'Eduardo Spohr' }
+    ]
+  },
+  {
+    name: 'Detektivky a thrillery',
+    books: [
+      { name: 'A chave de Salomão', author: 'José Rodrigues dos Santos' },
+      { name: 'O silêncio da chuva', author: 'Luiz Alfredo Garcia-Roza' },
+      { name: 'As Esganadas', author: 'Jô Soares' },
+      { name: 'O Seminarista', author: 'Rubem Fonseca' }
+    ]
+  },
+  {
+    name: 'Literatura faktu a autobiografie',
+    books: [
+      { name: 'Minha Razão de Viver', author: 'Samuel Wainer' },
+      { name: 'Correr: O Exercício, a Cidade e o Desafio da Vida', author: 'Drauzio Varella' },
+      { name: 'O Evangelho Segundo Jesus Cristo', author: 'José Saramago' },
+      { name: 'Os Sertões', author: 'Euclides da Cunha' }
+    ]
+  }
+];
+
+
 
 export const Books = ({ booksList }) => {
   return (
@@ -44,80 +133,12 @@ export const Books = ({ booksList }) => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {booksList.map((item) => {
             return (
-              <Book
-                name={item.name}
-                books={[item.book1, item.book2, item.book3, item.book4]}
-                key={item.name}
-              />
+              <Book name={item.name} books={item.books} key={item.name} />
             );
           })}
         </div>
       </div>
   );
 };
-
-// SPANELSTINA
-export const spanishBooksList = [
-  {
-    name: 'Klasická literartura',
-    book1: '- Don Quijote de la Mancha od Miguel de Cervantes',
-    book2: '- Cien años de soledad od Gabriel García Márquez',
-    book3: '- La casa de los espíritus od Isabel Allende',
-    book4: '- Pedro Páramo od Juan Rulfo',
-  },
-  {
-    name: 'Fantasy a sci-fi',
-    book1: '- Memorias de Idhún: La Resistencia od Laura Gallego García',
-    book2: '- La leyenda del Rey Errante od Laura Gallego García',
-    book3: '- El Hobbit od J.R.R. Tolkien',
-    book4: "- Cronopaisaje od Gregory Benford",
-  },
-  {
-    name: 'Detektivky a thrillery',
-    book1: '- El guardián invisible od Dolores Redondo',
-    book2: '- La reina del sur od Arturo Pérez-Reverte',
-    book3: '- El secreto de sus ojos od Eduardo Sacheri',
-    book4: '- La trilogía del Baztán od Dolores Redondo',
-  },
-  {
-    name: 'Literatura faktu a autobiografie',
-    book1: '- Vivir para contarla od Gabriel García Márquez',
-    book2: '- Paula od Isabel Allende',
-    book3: '- Confieso que he vivido od Pablo Neruda',
-    book4: '- El olvido que seremos od Héctor Abad Faciolince',
-  },
-];
-
-// PORTUGALSTINA
-export const portugueseBooksList = [
-  {
-    name: 'Klasická literartura',
-    book1: '- Os Lusíadas od Luís de Camões',
-    book2: '- O Primo Basílio od José Maria de Eça de Queirós',
-    book3: '- Iracema od José de Alencar',
-    book4: '- Memórias Póstumas de Brás Cubas od Machado de Assis',
-  },
-  {
-    name: 'Fantasy a sci-fi',
-    book1: '- A Batalha do Apocalipse: Da Queda dos Anjos ao Crepúsculo do Mundo od Eduardo Spohr',
-    book2: '- O Alquimista od Paulo Coelho',
-    book3: '- A Guerra dos Tronos od George R.R. Martin ',
-    book4: "- Filhos do Éden: Herdeiros de Atlântida od Eduardo Spohr",
-  },
-  {
-    name: 'Detektivky a thrillery',
-    book1: '- A chave de Salomão od José Rodrigues dos Santos',
-    book2: '- O silêncio da chuva od Luiz Alfredo Garcia-Roza',
-    book3: '- As Esganadas od Jô Soares',
-    book4: '- O Seminarista od Rubem Fonseca',
-  },
-  {
-    name: 'Literatura faktu a autobiografie',
-    book1: ' - Minha Razão de Viver od Samuel Wainer',
-    book2: ' - Correr: O Exercício, a Cidade e o Desafio da Vida od Drauzio Varella',
-    book3: ' - O Evangelho Segundo Jesus Cristo od José Saramago',
-    book4: ' - Os Sertões" od Euclides da Cunha',
-  },
-];
 
 
